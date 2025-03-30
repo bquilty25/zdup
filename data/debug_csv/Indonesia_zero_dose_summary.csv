@@ -1,0 +1,17 @@
+"country","year","vaccine","stratum","Flat coverage","Increasing coverage","Flat + catchup campaigns","Increasing + catchup campaigns"
+"Indonesia",2025,"DTP","urban_nonpoor",14.4,14.4,14.4,14.4
+"Indonesia",2025,"DTP","urban_poor",220.1,213.1,220.1,213.1
+"Indonesia",2025,"Measles","urban_nonpoor",9.6,9.6,9.6,9.6
+"Indonesia",2025,"Measles","urban_poor",162.6,155.9,162.6,155.9
+"Indonesia",2030,"DTP","urban_nonpoor",15.5,15.5,15.5,15.5
+"Indonesia",2030,"DTP","urban_poor",237.1,213.2,237.1,213.2
+"Indonesia",2030,"Measles","urban_nonpoor",10.3,10.3,10.3,10.3
+"Indonesia",2030,"Measles","urban_poor",175.2,152.5,175.2,152.5
+"Indonesia",2040,"DTP","urban_nonpoor",17.9,17.9,17.9,17.9
+"Indonesia",2040,"DTP","urban_poor",274.1,219.2,274.1,219.2
+"Indonesia",2040,"Measles","urban_nonpoor",11.9,11.9,11.9,11.9
+"Indonesia",2040,"Measles","urban_poor",202.5,151.1,202.5,151.1
+"Indonesia",2050,"DTP","urban_nonpoor",0,0,0,0
+"Indonesia",2050,"DTP","urban_poor",0,0,0,0
+"Indonesia",2050,"Measles","urban_nonpoor",0,0,0,0
+"Indonesia",2050,"Measles","urban_poor",0,0,0,0

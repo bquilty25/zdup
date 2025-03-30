@@ -1,0 +1,78 @@
+code,country,survey,year
+AFG,Afghanistan,DHS,2015
+AGO,Angola,DHS,2015
+ARM,Armenia,DHS,2015
+BEN,Benin,MICS,2014
+BGD,Bangladesh,DHS,2014
+BIH,Bosnia and Herzegovina,MICS,2011
+BLR,Belarus,MICS,2012
+BRB,Barbados,MICS,2012
+CIV,Cote d'Ivoire,DHS,2011
+CMR,Cameroon,MICS,2014
+COD,Democratic Republic of the Congo,DHS,2013
+COG,Congo,DHS,2011
+COL,Colombia,DHS,2015
+COM,Comoros,DHS,2012
+DOM,Dominican Republic,DHS MICS,2014
+DZA,Algeria,MICS,2012
+EGY,Egypt,DHS,2014
+ETH,Ethiopia,DHS,2016
+GAB,Gabon,DHS,2012
+GHA,Ghana,DHS,2014
+GIN,Guinea,DHS,2012
+GMB,Gambia,DHS,2013
+GNB,Guinea-Bissau,MICS,2014
+GTM,Guatemala,DHS,2014
+GUY,Guyana,MICS,2014
+HND,Honduras,DHS,2011
+HTI,Haiti,DHS,2012
+IDN,Indonesia,DHS,2012
+IND,India,DHS,2015
+JOR,Jordan,DHS,2012
+KAZ,Kazakhstan,MICS,2015
+KEN,Kenya,DHS,2014
+KGZ,Kyrgyzstan,DHS MICS,2014
+KHM,Cambodia,DHS,2014
+LAO,Lao People's Democratic Republic,MICS,2011
+LBR,Liberia,DHS,2013
+LCA,Saint Lucia,MICS,2012
+LSO,Lesotho,DHS,2014
+MDA,Republic of Moldova,MICS,2012
+MEX,Mexico,MICS,2015
+MLI,Mali,DHS,2012
+MNE,Montenegro,MICS,2013
+MNG,Mongolia,MICS,2013
+MWI,Malawi,DHS,2015
+NAM,Namibia,DHS,2013
+NER,Niger,DHS,2012
+NGA,Nigeria,DHS MICS,2016
+NPL,Nepal,DHS,2016
+PAK,Pakistan,DHS,2012
+PAN,Panama,MICS,2013
+PER,Peru,DHS,2012
+PHL,Philippines,DHS,2013
+PRY,Paraguay,MICS,2016
+PSE,State of Palestine,MICS,2014
+RWA,Rwanda,DHS,2014
+SDN,Sudan,MICS,2014
+SEN,Senegal,DHS,2016
+SLE,Sierra Leone,DHS,2013
+SLV,El Salvador,MICS,2014
+SRB,Serbia,MICS,2014
+STP,Sao Tome and Principe,MICS,2014
+SWZ,Eswatini,MICS,2014
+TCD,Chad,DHS,2014
+TGO,Togo,DHS,2013
+THA,Thailand,MICS,2012
+TJK,Tajikistan,DHS,2012
+TKM,Turkmenistan,MICS,2015
+TUN,Tunisia,MICS,2011
+TUR,Turkey,DHS,2013
+TZA,United Republic of Tanzania,DHS,2015
+UKR,Ukraine,MICS,2012
+URY,Uruguay,MICS,2012
+VNM,Viet Nam,MICS,2014
+XKX,Kosovo,MICS,2013
+YEM,Yemen,DHS,2013
+ZMB,Zambia,DHS,2013
+ZWE,Zimbabwe,DHS,2015

@@ -1,0 +1,17 @@
+"country","year","vaccine","stratum","Flat coverage","Increasing coverage","Flat + catchup campaigns","Increasing + catchup campaigns"
+"Bangladesh",2025,"DTP","urban_nonpoor",5.2,5.2,5.2,5.2
+"Bangladesh",2025,"DTP","urban_poor",58.9,58.9,58.9,58.9
+"Bangladesh",2025,"Measles","urban_nonpoor",3.5,3.5,3.5,3.5
+"Bangladesh",2025,"Measles","urban_poor",43.5,42.1,43.5,42.1
+"Bangladesh",2030,"DTP","urban_nonpoor",6,6,6,6
+"Bangladesh",2030,"DTP","urban_poor",68.1,68.1,68.1,68.1
+"Bangladesh",2030,"Measles","urban_nonpoor",4,4,4,4
+"Bangladesh",2030,"Measles","urban_poor",50.3,45.9,50.3,45.9
+"Bangladesh",2040,"DTP","urban_nonpoor",6.9,6.9,6.9,6.9
+"Bangladesh",2040,"DTP","urban_poor",78,78,78,78
+"Bangladesh",2040,"Measles","urban_nonpoor",4.6,4.6,4.6,4.6
+"Bangladesh",2040,"Measles","urban_poor",57.6,52,57.6,52
+"Bangladesh",2050,"DTP","urban_nonpoor",0,0,0,0
+"Bangladesh",2050,"DTP","urban_poor",0,0,0,0
+"Bangladesh",2050,"Measles","urban_nonpoor",0,0,0,0
+"Bangladesh",2050,"Measles","urban_poor",0,0,0,0

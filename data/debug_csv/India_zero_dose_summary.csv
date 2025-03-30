@@ -1,0 +1,17 @@
+"country","year","vaccine","stratum","Flat coverage","Increasing coverage","Flat + catchup campaigns","Increasing + catchup campaigns"
+"India",2025,"DTP","urban_nonpoor",25.7,25.7,25.7,25.7
+"India",2025,"DTP","urban_poor",509.5,482.2,509.5,482.2
+"India",2025,"Measles","urban_nonpoor",17.2,17.2,17.2,17.2
+"India",2025,"Measles","urban_poor",376.5,344.4,376.5,344.4
+"India",2030,"DTP","urban_nonpoor",29.2,29.2,29.2,29.2
+"India",2030,"DTP","urban_poor",579.1,487.8,579.1,487.8
+"India",2030,"Measles","urban_nonpoor",19.5,19.5,19.5,19.5
+"India",2030,"Measles","urban_poor",427.9,327.1,427.9,327.1
+"India",2040,"DTP","urban_nonpoor",36.6,36.6,36.6,36.6
+"India",2040,"DTP","urban_poor",724.6,525.6,724.6,525.6
+"India",2040,"Measles","urban_nonpoor",24.4,24.4,24.4,24.4
+"India",2040,"Measles","urban_poor",535.5,337.9,535.5,337.9
+"India",2050,"DTP","urban_nonpoor",0,0,0,0
+"India",2050,"DTP","urban_poor",0,0,0,0
+"India",2050,"Measles","urban_nonpoor",0,0,0,0
+"India",2050,"Measles","urban_poor",0,0,0,0

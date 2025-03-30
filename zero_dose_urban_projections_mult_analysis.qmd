@@ -1,0 +1,694 @@
+---
+title: "Urban Vaccination Dynamics to 2050: Projecting Coverage Disparities and Zero-Dose Children in a Rapidly Urbanising World"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: false
+    geometry:
+      - top=25mm
+      - left=20mm
+      - right=20mm
+      - bottom=25mm
+    fontsize: 11pt
+    documentclass: article
+    linestretch: 1.15
+    fig-width: 7
+    fig-height: 5
+    include-in-header:
+      text: |
+        \usepackage{float}
+        \usepackage{booktabs}
+        \usepackage{longtable}
+        \usepackage{array}
+        \usepackage{multirow}
+        \usepackage{wrapfig}
+        \usepackage{colortbl}
+        \usepackage{pdflscape}
+        \usepackage{tabu}
+        \usepackage{threeparttable}
+        \usepackage{threeparttablex}
+        \usepackage{makecell}
+        \usepackage{xcolor}
+        \usepackage{caption}
+        \captionsetup[figure]{font=small,labelfont=bf}
+        \captionsetup[table]{font=small,labelfont=bf}
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+    code-fold: true
+    code-tools: true
+    code-line-numbers: true
+    fig-width: 8
+    fig-height: 6
+    embed-resources: true
+crossref:
+  custom:
+    - kind: float
+      key: suppfig
+      reference-prefix: "Figure S"
+      space-before-numbering: false
+      latex-env: suppfig
+      latex-list-of-description: "Supplementary Figure"
+execute:
+  echo: false
+  warning: false
+  message: false
+bibliography: references.bib
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include = FALSE, echo = FALSE}
+# Load required packages
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(scales)
+library(gridExtra)
+library(patchwork)
+library(DT)
+
+# Set global options for figures
+knitr::opts_chunk$set(
+  fig.width = 7,
+  fig.height = 5,
+  out.width = "100%",
+  fig.align = "center",
+  dpi = 300
+)
+
+
+# Load output data for analysis with more descriptive variable names
+coverage_projections_historical <- read_csv("outputs/coverage_projections_historical.csv", show_col_types = FALSE)
+coverage_projections_static <- read_csv("outputs/coverage_projections_static.csv", show_col_types = FALSE)
+coverage_summary_combined <- read_csv("outputs/coverage_summary_comparison.csv", show_col_types = FALSE)
+zero_dose_summary_combined <- read_csv("outputs/zero_dose_summary_comparison.csv", show_col_types = FALSE)
+cumulative_diff <- read_csv("outputs/cumulative_zero_dose_difference.csv", show_col_types = FALSE)
+
+# Create helper functions for inline statistics formatting
+format_pct <- function(x, digits = 1) {
+  paste0(format(round(x, digits), nsmall = digits), "%")
+}
+
+format_num <- function(x, digits = 1, scale = 1e6, suffix = " million") {
+  paste0(format(round(x/scale, digits), nsmall = digits), suffix)
+}
+```
+
+```{r calculate-key-metrics}
+# Calculate key statistics for the Results section
+urban_nonpoor_2025 <- coverage_summary_combined %>% 
+  filter(country == "Global", year == 2025, vaccine == "DTP1", method == "historical_progress") %>% 
+  select(urban_nonpoor_coverage) %>% 
+  pull()
+
+urban_poor_2025 <- coverage_summary_combined %>% 
+  filter(country == "Global", year == 2025, vaccine == "DTP1", method == "historical_progress") %>% 
+  select(urban_poor_coverage) %>% 
+  pull()
+
+dtp1_2050_historical <- coverage_summary_combined %>% 
+  filter(country == "Global", year == 2050, vaccine == "DTP1", method == "historical_progress") %>% 
+  select(overall_coverage) %>% 
+  pull()
+
+urban_nonpoor_2050 <- coverage_summary_combined %>% 
+  filter(country == "Global", year == 2050, vaccine == "DTP1", method == "historical_progress") %>% 
+  select(urban_nonpoor_coverage) %>% 
+  pull()
+
+urban_poor_2050 <- coverage_summary_combined %>% 
+  filter(country == "Global", year == 2050, vaccine == "DTP1", method == "historical_progress") %>% 
+  select(urban_poor_coverage) %>% 
+  pull()
+
+nigeria_static_2050 <- zero_dose_summary_combined %>% 
+  filter(country == "Nigeria", year == 2050, vaccine == "DTP1", method == "static") %>% 
+  pull(urban_poor_zero_dose)
+
+nigeria_historical_2050 <- zero_dose_summary_combined %>% 
+  filter(country == "Nigeria", year == 2050, vaccine == "DTP1", method == "historical_progress") %>% 
+  pull(urban_poor_zero_dose)
+
+# Calculate the gap for 2025
+global_dtp1_gap_2025 <- coverage_summary_combined %>% 
+  filter(country == "Global", year == 2025, vaccine == "DTP1", method == "historical_progress") %>% 
+  summarize(diff = urban_nonpoor_coverage - urban_poor_coverage) %>% 
+  pull(diff)
+
+# Fix these inline code used in the text:
+global_zero_dose_static_2050 <- zero_dose_summary_combined %>% 
+  filter(country == "Global", year == 2050, vaccine == "DTP1", method == "static") %>% 
+  pull(urban_poor_zero_dose)
+
+global_zero_dose_historical_2050 <- zero_dose_summary_combined %>% 
+  filter(country == "Global", year == 2050, vaccine == "DTP1", method == "historical_progress") %>% 
+  pull(urban_poor_zero_dose)
+
+global_zero_dose_diff_2050 <- global_zero_dose_static_2050 - global_zero_dose_historical_2050
+
+global_cumulative_diff <- cumulative_diff %>% 
+  filter(country == "Global") %>% 
+  pull(cumulative_difference)
+
+# Define country order with Global first for all tables and plots
+country_order <- c("Global", "Nigeria", "India", "Pakistan", "Ethiopia", "Indonesia", "Angola", "Colombia", "Afghanistan")
+
+# Create summary table of model projections with Global first
+summary_table <- coverage_summary_combined %>%
+  filter(year %in% c(2025, 2030, 2050)) %>%
+  filter(country %in% country_order) %>%
+  filter(vaccine == "DTP1") %>%
+  select(country, year, method, overall_coverage) %>%
+  pivot_wider(
+    names_from = c(year, method),
+    values_from = overall_coverage,
+    names_prefix = "coverage_"
+  ) %>%
+  # Use factor with custom order to ensure Global comes first
+  mutate(country = factor(country, levels = country_order)) %>%
+  arrange(country)
+
+# Create zero-dose summary table with Global first
+zero_dose_table <- zero_dose_summary_combined %>%
+  filter(year %in% c(2025, 2030, 2050)) %>%
+  filter(country %in% country_order) %>%
+  filter(vaccine == "DTP1") %>%
+  select(country, year, method, total_zero_dose) %>%
+  pivot_wider(
+    names_from = c(year, method),
+    values_from = total_zero_dose,
+    names_prefix = "zerodose_"
+  ) %>%
+  # Use factor with custom order to ensure Global comes first
+  mutate(country = factor(country, levels = country_order)) %>%
+  arrange(country)
+```
+
+# Abstract
+
+Childhood immunisation programmes face significant challenges in urban settings, where rapid population growth may outpace improvements in vaccination coverage. Here, we develop a modelling approach to project vaccination coverage for diphtheria-tetanus-pertussis (DTP) and measles vaccines through 2050, comparing trend-based projections with static coverage scenarios. Our model stratifies urban populations into poor and non-poor categories, revealing substantial disparities in coverage. At baseline in 2025, global DTP1 coverage shows a `r format_pct(global_dtp1_gap_2025)` percentage point gap between urban non-poor and urban poor populations. Under the trend-based projection that continues historical improvements, the number of zero-dose children in urban poor settings would decrease to `r format_num(global_zero_dose_historical_2050)` by 2050, compared to `r format_num(global_zero_dose_static_2050)` in the static scenario where coverage rates remain at 2025 levels. This represents a cumulative difference of `r format_num(global_cumulative_diff)` unvaccinated children between the two scenarios over the 25-year projection period. These findings highlight the "Red Queen" paradox in urban immunisation: substantial increases in coverage rates are necessary merely to prevent growth in the absolute number of unvaccinated children due to population expansion. Our results provide critical insights for achieving global immunisation goals, particularly in rapidly urbanising regions of Africa and South Asia, where targeted interventions for urban poor populations will be essential for reducing inequity and reaching zero-dose children.
+
+# Introduction
+
+Vaccination represents one of the most successful and cost-effective public health interventions in history, preventing an estimated 4.5 million deaths annually worldwide [@patel2020]. Despite significant increases in global coverage over recent decades, approximately 18 million children remain unvaccinated—known as "zero-dose" children—particularly in urban poor settings [@hogan2023]. The number and distribution of these children present a critical challenge for global health equity and security, as unvaccinated populations create vulnerability for disease resurgence even in areas with generally high coverage [@johri2023].
+
+Global urbanisation is accelerating at an unprecedented rate, with the proportion of the world's population living in urban areas projected to increase from 56% in 2020 to nearly 70% by 2050 [@worldurbanizationprospects]. This demographic transition presents both opportunities and challenges for vaccination programmes. Urban environments typically offer better physical access to health facilities compared to rural areas, creating what has been termed the "urban advantage" in health service delivery [@santos2024]. However, this advantage conceals profound intra-urban inequalities, particularly in rapidly growing cities where informal settlements and slums accommodate significant proportions of the population.
+
+Urban poor populations face distinct barriers to vaccination that differ fundamentally from those in rural settings [@belt2023; @crocker2017]. These barriers include:
+
+1.  Social marginalisation and lack of documentation that impedes access to services
+2.  High mobility and housing insecurity that disrupts continuity of care
+3.  Weaker community health systems and social networks compared to rural areas
+4.  Economic constraints including opportunity costs for caregivers in informal employment
+5.  Inadequate service delivery models that fail to account for urban-specific challenges
+
+Recent analyses across 97 low- and middle-income countries reveal that zero-dose prevalence is significantly higher in poor urban areas (12.6%) compared to non-poor urban areas (6.5%) [@cata2024], illustrating that geographical proximity to health facilities alone does not guarantee equitable access. Studies in specific urban contexts, such as Kikwit in the Democratic Republic of the Congo, have identified significant spatial clustering of zero-dose children, with hotspots often concentrated in informal settlements [@mutwadi2024]. These patterns underscore the complex interplay between urbanisation, socioeconomic status, and vaccination coverage.
+
+The Immunisation Agenda 2030 (IA2030) has established ambitious targets for reducing the number of zero-dose children globally by 50% and improving vaccination equity [@ia2030; @dadari2023]. If successful, the IA2030 could avert an estimated 51.5 million deaths globally between 2021 and 2030 [@carter2023]. However, achieving these targets requires a nuanced understanding of how urbanisation trends will interact with vaccination coverage dynamics over the coming decades. Without detailed projections that account for both overall urbanisation patterns and the specific dynamics of urban poor populations, it remains unclear whether maintaining or even continuing historical rates of improvement will be sufficient.
+
+Previous efforts examining vaccination coverage have typically aggregated urban populations into a single stratum, potentially masking important disparities in access and outcomes between socioeconomic groups [@wigley2023]. This limitation is particularly problematic given evidence from recent studies showing that urban poor children are often more likely to be zero-dose than their rural counterparts, despite geographical proximity to health facilities [@santos2024]. The COVID-19 pandemic further exacerbated these disparities, with the number of zero-dose children globally increasing from 13.3 million in 2019 to 18.1 million in 2021, with urban areas being disproportionately affected due to overwhelmed health systems [@khan2024].
+
+This study addresses these knowledge gaps by:
+
+1.  Developing trend-based projections of vaccination coverage from 2023 to 2050 using historical data (2000-2019) through historical progress models
+2.  Comparing these with static projections where coverage remains at 2023 levels
+3.  Stratifying urban populations into poor and non-poor groups to examine coverage disparities
+4.  Quantifying the implications for zero-dose children across multiple high-burden countries
+
+Our analysis focuses on eight countries with large urban populations and significant numbers of zero-dose children (Nigeria, India, Pakistan, Ethiopia, Indonesia, Angola, Colombia, Afghanistan, and global aggregates), providing insights into the potential impact of different policy approaches on achieving global immunisation goals. The results offer important implications for national immunisation programmes, global health initiatives, and resource allocation decisions aimed at reducing vaccination inequities in increasingly urbanised settings.
+
+# Methods
+
+## Data Sources and Model Structure
+
+We developed a computational model to project vaccination coverage in urban settings from 2023-2050 across countries with high burdens of under-vaccinated children. The model integrates multiple data sources and utilises a stratified approach to capture disparities within urban populations.
+
+### Population Data
+
+Demographic projections were obtained from the United Nations World Population Prospects 2022 revision [@worldpopulationprospects], which provides country-specific age-structured population estimates through 2100. Urban proportions were derived from the World Urbanization Prospects 2018 revision [@worldurbanizationprospects], with linear interpolation applied for interim years.
+
+To stratify urban populations, we categorised residents into "urban poor" and "urban non-poor" based on:
+
+$$P_{urban,poor,i,t} = P_{urban,i,t} \times \phi_{i,t}$$
+
+Where $P_{urban,poor,i,t}$ represents the urban poor population in country $i$ at time $t$.
+
+### Vaccination Coverage Data
+
+Historical vaccination coverage estimates (2000-2019) were sourced from the WHO/UNICEF Estimates of National Immunization Coverage (WUENIC) dataset [@whounicefestimates]. These annual estimates provide coverage percentages for DTP1, DTP3, and measles-containing vaccine first dose (MCV1) for all countries. Our analysis focused primarily on DTP1 as an indicator of initial access to vaccination services and the first dose of measles-containing vaccine to assess completion of the basic immunization schedule.
+
+Coverage differentials between population strata were derived from an analysis of Demographic and Health Surveys across 97 low- and middle-income countries [@santos2024]. For each country, we calculated stratum-specific coverage rates using:
+
+$$c_{i,v,s,t} = c_{i,v,t} \times \delta_{i,v,s}$$
+
+Where $c_{i,v,s,t}$ is the coverage for country $i$, vaccine $v$, stratum $s$ at time $t$; $c_{i,v,t}$ is the national coverage; and $\delta_{i,v,s}$ is the stratum-specific adjustment factor.
+
+### Statistical Modelling
+
+For trend-based projections, we fitted historical progress models to historical coverage data for each country-vaccine combination. Historical progress models are particularly suitable for modelling vaccination coverage as they naturally constrains predictions to the interval (0,1).
+
+The model specification was:
+
+$$
+\begin{aligned}
+y_{it} &\sim \text{Beta}(\mu_{it}, \phi) \\
+\text{logit}(\mu_{it}) &= \beta_{0i} + \beta_{1i}(t - 2023) \\
+\end{aligned}
+$$
+
+Where: - $y_{it}$ is the observed coverage proportion for country $i$ in year $t$ - $\mu_{it}$ is the expected coverage proportion - $\phi$ is a precision parameter - $\beta_{0i}$ is the country-specific intercept (representing log-odds of coverage in 2023) - $\beta_{1i}$ is the country-specific slope (representing annual change in log-odds)
+
+The model was estimated using maximum likelihood estimation via the `betareg` package in R [@cribari2010]. For each country-vaccine combination, we extracted the fitted intercept and slope parameters to generate projections from 2023 to 2050.
+
+## Projection Methods
+
+We implemented two main projection approaches to examine different policy scenarios:
+
+### Historical Progress 2000-2019 (Trend-Based) Projections
+
+These projections assume that historical trends in coverage improvement will continue, accounting for country-specific patterns:
+
+$$
+\begin{aligned}
+\text{logit}(c_{i,v,t}) &= \beta_{0i,v} + \beta_{1i,v}(t - 2023) \\
+c_{i,v,t} &= \text{logit}^{-1}(\beta_{0i,v} + \beta_{1i,v}(t - 2023))
+\end{aligned}
+$$
+
+Where $c_{i,v,t}$ is the projected coverage for country $i$, vaccine $v$ at time $t$, and $\beta_{0i,v}$ and $\beta_{1i,v}$ are the country and vaccine-specific intercept and slope parameters. The inverse logit function ensures that projected coverage remains bounded between 0 and 1:
+
+$$\text{logit}^{-1}(x) = \frac{e^x}{1 + e^x}$$
+
+
+### Static Projections
+
+This approach maintains coverage at 2023 levels throughout the projection period:
+
+$$c_{i,v,t} = c_{i,v,2023} \quad \forall t \in [2024, 2050]$$
+
+This provides a baseline for comparison and represents a scenario where vaccination programmes maintain current performance but do not achieve further improvements.
+
+Both approaches preserve the baseline disparities in coverage between population strata:
+
+$$c_{i,v,s,t} = c_{i,v,t} \times \frac{c_{i,v,s,2023}}{c_{i,v,2023}}$$
+
+## Zero-Dose Calculation
+
+For each country, year, projection method, and population stratum, we calculated:
+
+1.  The number of unvaccinated children:
+
+$$Z_{i,v,s,t} = P_{i,s,t} \times (1 - c_{i,v,s,t})$$
+
+Where $Z_{i,v,s,t}$ is the number of zero-dose children for country $i$, vaccine $v$, stratum $s$ at time $t$; $P_{i,s,t}$ is the eligible population; and $c_{i,v,s,t}$ is the coverage.
+
+2.  The absolute difference in zero-dose children between projection methods:
+
+$$\Delta Z_{i,v,s,t} = Z_{i,v,s,t}^{static} - Z_{i,v,s,t}^{historical}$$
+
+3.  The cumulative difference over the projection period:
+
+$$\Delta Z_{i,v,s}^{cum} = \sum_{t=2023}^{2050} \Delta Z_{i,v,s,t}$$
+
+## Computational Implementation
+
+We conducted our analysis in R (version 4.2.0) using the tidyverse suite of packages (version 1.3.2) for data manipulation and visualization. The beta regression models were fitted using the betareg package (version 3.1-4). The complete code and data are available in a public repository to ensure reproducibility.
+
+# Results
+
+## Baseline Coverage Disparities
+
+Our analysis reveals substantial disparities in vaccination coverage between urban poor and urban non-poor populations across all countries studied. As of 2025, the global average DTP1 coverage was `r format_pct(urban_nonpoor_2025)` for urban non-poor populations compared to `r format_pct(urban_poor_2025)` for urban poor populations, representing a gap of `r format_pct(global_dtp1_gap_2025)` percentage points. Similar disparities were observed for measles vaccination, though baseline coverage levels were generally different due to the sequential nature of childhood immunization schedules.
+
+These disparities persist despite the physical proximity of urban poor populations to health facilities, highlighting the complex socioeconomic barriers that transcend geographical access. @fig-baseline-disparities illustrates the baseline coverage disparities between urban population strata for selected countries, revealing heterogeneous patterns that reflect different urbanisation trajectories and health system capacities.
+
+```{r}
+#| label: fig-baseline-disparities
+#| fig-cap: "Baseline (2025) vaccination coverage disparities by urban population strata for DTP1 across selected countries. Urban poor populations consistently show lower coverage compared to urban non-poor populations despite geographical proximity to health services."
+#| out-width: "100%"
+#| fig-width: 9
+#| fig-height: 7
+
+# Apply consistent country ordering to all plots
+knitr::include_graphics("outputs/fig1_baseline_disparities.png")
+```
+
+## Vaccination Coverage Projections
+
+Using beta regression models fitted to historical data (2000-2019), we projected vaccination coverage for both DTP1 and measles vaccines for all countries through 2050. Under the trend-based scenario, global DTP1 coverage is expected to reach `r format_pct(dtp1_2050_historical)` by 2050, representing a `r format_pct(dtp1_2050_historical - mean(c(urban_nonpoor_2025, urban_poor_2025)))` percentage point increase from the 2025 baseline.
+
+However, this aggregate figure masks important differences between population strata. By 2050, coverage is projected to reach `r format_pct(urban_nonpoor_2050)` for urban non-poor populations but only `r format_pct(urban_poor_2050)` for urban poor populations, indicating persistent disparities throughout the projection period.
+
+For measles vaccination, which typically occurs later in the immunization schedule than DTP1, similar patterns were observed though with somewhat different baseline levels and trajectories due to the distinct historical emphasis on measles campaigns in many countries.
+
+Table 1 summarises the projected DTP1 coverage rates for selected countries across both projection methods, demonstrating the divergence between trend-based and static scenarios over time.
+
+```{r}
+#| label: tbl-coverage-projections
+#| tbl-cap: "DTP1 vaccination coverage (%) under historical progress and static methods (2025-2050)"
+
+# Format the summary table for display
+coverage_table <- summary_table %>%
+  rename(Country = country) %>%
+  mutate(across(starts_with("coverage_"), ~paste0(round(., 1), "%")))
+
+# Get column names to ensure correct structure
+col_names <- c("Country")
+for (yr in c(2025, 2030, 2050)) {
+  for (mth in c("historical_progress", "static")) {
+    col_names <- c(col_names, paste0("coverage_", yr, "_", mth))
+  }
+}
+
+# Check if all expected columns are present
+missing_cols <- setdiff(col_names, names(coverage_table))
+if (length(missing_cols) > 0) {
+  warning("Missing columns: ", paste(missing_cols, collapse = ", "))
+  # Add missing columns with NA values
+  for (col in missing_cols) {
+    coverage_table[[col]] <- NA
+  }
+  # Ensure columns are in correct order
+  coverage_table <- coverage_table %>% select(all_of(col_names))
+}
+
+# Simplified table output
+knitr::kable(coverage_table, 
+             booktabs = TRUE,
+             col.names = c("Country", "2025 Historical Progress", "2025 Static", "2030 Historical Progress", "2030 Static", 
+                          "2050 Historical Progress", "2050 Static"),
+             align = c("l", rep("c", 6))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), 
+                full_width = FALSE, 
+                font_size = 8) %>%
+  add_header_above(c(" " = 1, "2025" = 2, "2030" = 2, "2050" = 2)) %>%
+  footnote(
+    general = "Values represent projected vaccination coverage across urban population strata.",
+    general_title = "Note:",
+    footnote_as_chunk = TRUE
+  )
+```
+
+@fig-method-comparison provides a visual comparison of the two projection methods for DTP1 coverage across selected countries. The trend-based projections show continued improvement in coverage aligned with historical patterns, while static projections maintain 2025 levels through 2050. The divergence between methods increases over time, with substantial differences by 2050.
+
+```{r}
+#| label: fig-method-comparison
+#| fig-cap: "Comparison of DTP1 vaccination coverage projections (2025-2050) using historical progress and static projection methods for selected countries. Historical progress projections show continued improvement based on historical trends (2000-2019), while static projections maintain 2025 coverage levels. The divergence between methods increases over time, with substantial differences by 2050."
+#| out-width: "100%"
+#| fig-width: 10
+#| fig-height: 8
+
+knitr::include_graphics("outputs/fig2_method_comparison.png")
+```
+
+## Zero-Dose Children Projections
+
+The contrasting coverage trajectories between the two projection methods translate into significant differences in the projected number of zero-dose children for both DTP1 and measles vaccines. Under static coverage projections, the number of zero-dose children in urban poor settings globally would increase from `r format_num(zero_dose_summary_combined %>% filter(country == "Global", year == 2025, vaccine == "DTP1", method == "static") %>% pull(urban_poor_zero_dose))` in 2025 to `r format_num(global_zero_dose_static_2050)` by 2050 for DTP1, despite maintaining constant coverage rates. This paradoxical increase occurs because population growth in urban areas outpaces the effect of constant vaccination coverage.
+
+In contrast, with historical progress projections that assume continued historical improvements in coverage, the number of DTP1 zero-dose children in urban poor settings would decrease to `r format_num(global_zero_dose_historical_2050)` by 2050. This represents a difference of `r format_num(global_zero_dose_diff_2050)` children who would remain unvaccinated under static coverage compared to trend-based projections.
+
+Similar patterns are observed for measles vaccination, though the absolute numbers differ due to variations in the timing of administration and historical emphasis on measles campaigns in many countries.
+
+@fig-zero-diff illustrates the additional zero-dose children under static projections compared to historical progress projections over time. The positive values indicate more zero-dose children in the static scenario, with the difference increasing substantially over time.
+
+```{r}
+#| label: fig-zero-diff
+#| fig-cap: "Additional zero-dose children under static projections compared to historical progress projections (DTP1, 2025-2050). Positive values indicate more zero-dose children in the static scenario. The difference increases over time as historical progress projections assume continued improvement in coverage, while static projections maintain 2025 levels despite population growth."
+#| out-width: "100%"
+#| fig-width: 10
+#| fig-height: 8
+
+knitr::include_graphics("outputs/fig3_zero_dose_difference.png")
+```
+
+Country-specific patterns reveal important variations in the projected trajectories of zero-dose children. Nigeria shows a particularly concerning trajectory, with potentially `r format_num(nigeria_static_2050, scale=1e3, suffix=" thousand")` zero-dose children in urban poor settings by 2050 under static coverage, compared to `r format_num(nigeria_historical_2050, scale=1e3, suffix=" thousand")` under trend-based projections. This substantial difference highlights the critical importance of accelerating coverage improvements in countries with rapid urbanisation and high fertility rates.
+
+Table 2 presents the cumulative and average annual differences in zero-dose children between the two projection methods from 2023-2050. Globally, an estimated `r format_num(global_cumulative_diff)` additional zero-dose children would remain unvaccinated under static coverage compared to trend-based projections over the 27-year projection period.
+
+```{r}
+#| label: tbl-cumulative
+#| tbl-cap: "Cumulative additional zero-dose children under static coverage projections compared to historical progress projections (2023-2050). Values represent the difference in zero-dose children between static and historical progress projections, summed over the projection period. Positive values indicate more zero-dose children under static projections compared to historical progress projections."
+
+# Create a formatted table of cumulative differences
+cumulative_table <- cumulative_diff %>%
+  filter(country %in% country_order) %>%  # Using the consistent country order
+  mutate(
+    # Use factor to ensure Global first
+    country = factor(country, levels = country_order),
+    cumulative_difference = formatC(round(cumulative_difference), format="d", big.mark=","),
+    avg_annual_difference = formatC(round(avg_annual_difference), format="d", big.mark=",")
+  ) %>%
+  arrange(country) %>%  # Sort by the factor levels
+  rename(
+    Country = country,
+    `Cumulative difference (2023-2050)` = cumulative_difference,
+    `Average annual difference` = avg_annual_difference
+  )
+
+knitr::kable(cumulative_table, 
+            booktabs = TRUE, 
+            align = c("l", "r", "r")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+## Coverage and Zero-Dose Children by Population Strata
+
+Our analysis reveals significant differences in both vaccination coverage and zero-dose children between urban population strata for both DTP1 and measles vaccines. @fig-dtp-main shows the global and country-specific vaccination coverage and zero-dose children for DTP1 by urban strata under the historical progress method.
+
+```{r}
+#| label: fig-dtp-main
+#| fig-cap: "DTP1 vaccination coverage and zero-dose children by urban population strata. The left panels show global projections while right panels show country-specific patterns. Upper panels display coverage percentages while lower panels show absolute numbers of zero-dose children (in thousands). Urban poor populations consistently show lower coverage and higher numbers of zero-dose children despite proximity to health services."
+#| out-width: "100%"
+#| fig-width: 16
+#| fig-height: 10
+
+knitr::include_graphics("outputs/fig4_dtp1_global_country.png")
+```
+
+Urban poor populations consistently show lower coverage rates and higher numbers of zero-dose children compared to urban non-poor populations across all countries. This pattern persists through 2050, even under the more optimistic historical progress projections. The gap is particularly pronounced in Nigeria, where urban poor coverage remains substantially lower than urban non-poor throughout the projection period.
+
+Similar patterns are observed for measles vaccination (@fig-measles-main), though with generally higher baseline coverage levels compared to DTP1 in many countries. This difference reflects varying vaccination schedules, historical emphasis on measles campaigns, and potentially different perceptions of disease risk among caregivers. Despite these differences, the measles coverage data reveals the same persistent disparities between urban poor and urban non-poor populations observed with DTP1, indicating systemic barriers affecting the entire immunization schedule rather than vaccine-specific challenges.
+
+```{r}
+#| label: fig-measles-main
+#| fig-cap: "Measles vaccination coverage and zero-dose children by urban population strata. The left panels show global projections while right panels show country-specific patterns. Upper panels display coverage percentages while lower panels show absolute numbers of zero-dose children (in thousands). Similar to DTP1, urban poor populations consistently show lower measles coverage and higher numbers of zero-dose children."
+#| out-width: "100%"
+#| fig-width: 16
+#| fig-height: 10
+
+knitr::include_graphics("outputs/fig5_measles_global_country.png")
+```
+
+The interactive table below provides a detailed country-level breakdown of projected zero-dose children for 2023 and 2050 across the different scenarios, highlighting the magnitude of the challenge in specific high-burden countries.
+
+```{r}
+#| label: tbl-zero-dose-interactive
+#| tbl-cap: "Zero-dose children for DTP1 by country and urban strata (thousands, 2025 vs 2050)"
+
+# Create interactive table of zero-dose children - focus only on urban strata
+interactive_zero_dose <- zero_dose_summary_combined %>%
+  filter(year %in% c(2025, 2050)) %>%
+  filter(vaccine == "DTP1") %>%
+  filter(country %in% country_order) %>%  # Use consistent country order
+  mutate(country = factor(country, levels = country_order)) %>%  # Ensure Global is first
+  select(country, year, method, 
+         urban_poor_zero_dose, urban_nonpoor_zero_dose, total_zero_dose) %>%
+  mutate(
+    across(ends_with("zero_dose"), ~round(./1000, 1)),
+    year_method = paste(year, method, sep = "_")
+  ) 
+
+# Create a safer pivot with complete combinations
+interactive_zero_dose <- interactive_zero_dose %>%
+  complete(country, year_method) %>%
+  pivot_wider(
+    id_cols = country,
+    names_from = year_method,
+    values_from = c(urban_poor_zero_dose, urban_nonpoor_zero_dose, total_zero_dose)
+  ) %>%
+  arrange(country)  # Arrange by the factor levels
+
+# Format column names for display
+colnames(interactive_zero_dose) <- gsub("_zero_dose_", " ", colnames(interactive_zero_dose))
+colnames(interactive_zero_dose) <- gsub("_", " ", colnames(interactive_zero_dose))
+
+if(knitr::is_html_output()) {
+  DT::datatable(
+    interactive_zero_dose,
+    caption = "Projected Zero-Dose Children (thousands) for DTP1 by Country and Urban Strata",
+    options = list(
+      pageLength = 10,
+      scrollX = TRUE,
+      dom = 'Bfrtip',
+      buttons = c('copy', 'csv', 'excel')
+    ),
+    rownames = FALSE
+  ) %>%
+    formatRound(columns = 2:ncol(interactive_zero_dose), digits = 1)
+} else {
+  # For PDF output, show a simplified table
+  select_cols <- c("country", 
+                 "urban poor 2025 historical progress",
+                 "urban poor 2050 historical progress",
+                 "urban poor 2025 static",
+                 "urban poor 2050 static")
+  
+  # Handle missing columns
+  missing_cols <- setdiff(select_cols, names(interactive_zero_dose))
+  if (length(missing_cols) > 0) {
+    for (col in missing_cols) {
+      interactive_zero_dose[[col]] <- NA
+    }
+  }
+  
+  knitr::kable(
+    interactive_zero_dose[, select_cols],
+    caption = "Urban Poor Zero-Dose Children (thousands)",
+    col.names = c("Country", "2025 Historical Progress", "2050 Historical Progress", "2025 Static", "2050 Static"),
+    booktabs = TRUE
+  ) %>%
+    kable_styling(font_size = 8, 
+                  full_width = FALSE)
+}
+```
+
+## Supplementary Material
+
+The supplementary material includes additional analyses focused on rural populations and their comparison with urban populations. These supplementary analyses demonstrate that while rural populations generally have higher coverage than urban poor populations in most countries, they still face significant challenges in achieving full immunization coverage, particularly in regions with limited healthcare infrastructure.
+
+For more detailed analyses on population strata differences, see @suppfig-dtp-coverage, @suppfig-dtp-zerodose, @suppfig-measles-coverage, and @suppfig-measles-zerodose in the Supplementary Figures section.
+
+# Discussion
+
+Our projections demonstrate how urbanisation dynamics and demographic changes will substantially impact vaccination coverage for both DTP and measles vaccines through 2050. The stark disparities between static and trend-based projections highlight what can be termed a "Red Queen" paradox in urban immunisation, borrowing from Lewis Carroll's Through the Looking-Glass: "it takes all the running you can do, to keep in the same place" [@carroll1871]. This analogy aptly characterizes the challenge facing immunisation programmes in rapidly urbanising settings: even maintaining current coverage percentages will result in an increasing absolute number of unvaccinated children due to population growth and urbanisation.
+
+## Interpreting the "Red Queen" Effect in Urban Immunisation
+
+The projected increase in zero-dose children under static coverage—from `r format_num(zero_dose_summary_combined %>% filter(country == "Global", year == 2025, vaccine == "DTP1", method == "static") %>% pull(urban_poor_zero_dose))` in 2025 to `r format_num(global_zero_dose_static_2050)` by 2050 in urban poor settings globally—illustrates this paradox. Despite maintaining percentage coverage at 2025 levels, the absolute number of unvaccinated children increases by `r format_pct((global_zero_dose_static_2050 / (zero_dose_summary_combined %>% filter(country == "Global", year == 2025, vaccine == "DTP1", method == "static") %>% pull(urban_poor_zero_dose)) - 1) * 100)` over the projection period. This increase occurs because the denominator—the eligible population—grows faster than the numerator—the number of vaccinated children—when coverage rates remain static.
+
+This dynamic is particularly evident in countries with rapid urbanisation and high fertility rates, such as Nigeria, Ethiopia, and Afghanistan, where the gap between projection methods is largest. The cumulative difference of `r format_num(global_cumulative_diff)` additional zero-dose children under static coverage represents both an enormous public health burden and a profound ethical challenge for global health equity.
+
+## Urban Health Disparities and Vaccination Access
+
+Our analysis reinforces previous findings on health disparities within urban settings [@belt2023; @santos2024], but extends this work by quantifying the potential future trajectory of these disparities. The persistent gap between urban poor and urban non-poor coverage — `r format_pct(global_dtp1_gap_2025)` percentage points at baseline — remains largely unchanged in our projections, suggesting that without targeted interventions, existing inequities will likely persist even as overall coverage improves.
+
+This points to a fundamental limitation in how urban vaccination services are conceptualized and delivered. The "urban advantage" in health service access often assumed in global health planning appears to be predominantly enjoyed by non-poor urban residents, while urban poor populations experience a different reality. Recent studies from informal settlements in cities such as Dar es Salaam, Tanzania, demonstrate that targeted community-based interventions can successfully reintegrate zero-dose children into immunization programs [@tanzania2023], but these efforts require deliberate focus on urban poor communities that are often overlooked in national planning.
+
+Physical and financial barriers to immunization services remain significant in urban poor communities, with distance to health facilities, lack of transportation, and out-of-pocket costs deterring families from accessing services [@crocker2017; @mutwadi2024]. Additionally, the high mobility of urban poor populations—particularly recent migrants—creates disruptions in healthcare access that can lead to missed vaccinations [@farrenkopf2023]. These barriers are often compounded by service quality issues, including inadequate vaccine supply and untrained staff, which further reduce trust in the health system [@tiwari2024].
+
+Our projections demonstrate that these urban disparities represent a significant challenge for achieving global immunization goals, particularly as the world becomes increasingly urbanized with a growing proportion of urban poor populations.
+
+## Policy and Programmatic Implications
+
+Our findings highlight several key implications for immunization policy and planning across both DTP and measles vaccination programmes:
+
+1.  **Stratification of urban populations is essential**: The substantial difference in vaccination coverage between urban poor and urban non-poor populations indicates that treating urban populations as homogeneous severely underestimates the challenge. Future planning and target-setting must account for these intra-urban disparities to accurately assess progress. Our analysis corroborates the findings of @cata2024, who demonstrated significant disparities between poor and non-poor urban populations across 97 low- and middle-income countries.
+
+2.  **Historical progress is insufficient for ambitious targets**: Even under the more optimistic historical progress projections, significant numbers of zero-dose children would remain in 2050 for both DTP1 and measles vaccines. This suggests that historical rates of improvement may be insufficient to achieve global immunization goals such as those set by IA2030. For instance, research in Togo indicates that even with current trends, zero-dose prevalence is projected to only drop to 20.96% by 2030, well short of IA2030 targets [@alphonse2023].
+
+3.  **Demographic transitions must inform planning**: The paradoxical increase in zero-dose children despite maintained coverage percentages highlights how population growth and urbanization can offset or even reverse progress in absolute terms. This demographic reality must be incorporated into policy frameworks and global targets for all childhood vaccines.
+
+4.  **Context-specific analysis is needed**: The variation in projected outcomes across countries underscores the importance of context-specific strategies rather than one-size-fits-all approaches. Countries with rapid urbanization and high fertility rates face distinct challenges that require tailored responses. Subnational analyses in countries like Nigeria and regions such as the Eastern Mediterranean further emphasize the importance of targeting specific districts with high zero-dose prevalence to achieve equitable coverage [@aheto2023; @fahmy2024].
+
+5.  **Vaccine-specific approaches may be necessary**: Our analysis shows that while patterns are similar for DTP and measles vaccines, there are differences in baseline coverage levels and trajectories that may reflect distinct challenges in delivery timing, perception of disease risk, or historical campaign approaches. These differences suggest that while system-strengthening approaches are essential, vaccine-specific strategies may also be necessary.
+
+## Implications for Immunisation Agenda 2030 Targets
+
+Our findings have direct implications for the feasibility of achieving the targets set by the Immunisation Agenda 2030 (IA2030), which aims to reduce the number of zero-dose children globally by 50% and emphasizes equity in vaccination coverage [@ia2030; @dadari2023]. Based on our projections, there are significant challenges to meeting these targets:
+
+1.  **Zero-dose reduction target**: Under the static scenario, the number of zero-dose children in urban poor settings would increase from `r format_num(zero_dose_summary_combined %>% filter(country == "Global", year == 2025, vaccine == "DTP1", method == "static") %>% pull(urban_poor_zero_dose))` in 2025 to `r format_num(global_zero_dose_static_2050)` by 2050 for DTP1. Even with historical progress projections, approximately `r format_num(global_zero_dose_historical_2050)` children would remain unvaccinated in urban poor settings by 2050 for DTP1. This indicates that continuing historical improvement rates alone will be insufficient to achieve the 50% reduction target set by IA2030.
+
+2.  **Equity challenges**: Our analysis reveals a persistent `r format_pct(global_dtp1_gap_2025)` percentage point gap in DTP1 coverage between urban non-poor (`r format_pct(urban_nonpoor_2025)`) and urban poor (`r format_pct(urban_poor_2025)`) populations in 2025. This disparity is likely to continue, directly challenging IA2030's equity objectives, unless interventions are specifically targeted to urban poor populations. 
+
+3.  **Country-specific variation**: The substantial variation across countries indicates that meeting IA2030 targets will require differentiated analytical frameworks. Countries with rapid urbanisation and high fertility rates face distinct trajectories, with our projections showing significantly different outcomes under historical progress versus static scenarios.
+
+Our modeling indicates that to align with IA2030 targets, vaccination rates would need to accelerate beyond historical trends, with particular attention to urban poor populations and their unique demographic patterns.
+
+## Methodological Strengths and Limitations
+
+Our analysis represents an advance over previous projections by explicitly modelling population strata within urban settings and comparing alternative coverage trajectories. However, several important limitations should be noted:
+
+1.  **Fixed coverage disparities**: We maintain a fixed coverage difference between urban poor and non-poor populations based on 2023 baseline data. In reality, this difference may change over time due to economic development, social policies, or changes in urban inequality.
+
+2.  **Systemic changes not modelled**: Our projections do not account for potential systemic changes such as improvements in health system capacity, changes in vaccine hesitancy, or the emergence of new delivery technologies that could alter vaccination dynamics.
+
+3.  **Limited demographic complexity**: While we stratify populations into urban poor, urban non-poor, and rural categories, we do not account for further heterogeneity within these groups, such as recent migrants versus established residents in informal settlements.
+
+Despite these limitations, our projections provide valuable insights into the potential future trajectories of vaccination coverage and zero-dose children in urban settings, and highlight the critical importance of addressing urban health disparities to achieve global immunisation goals.
+
+# Conclusions
+
+Our analysis demonstrates that achieving global immunisation goals requires targeted strategies for urban poor populations, who face persistent barriers to vaccine access despite geographical proximity to health services. The evidence points to an urgent "running to stand still" challenge: with static coverage, the absolute number of zero-dose children in urban poor settings is projected to increase by `r format_pct((global_zero_dose_static_2050 / (zero_dose_summary_combined %>% filter(country == "Global", year == 2025, vaccine == "DTP1", method == "static") %>% pull(urban_poor_zero_dose)) - 1) * 100)` by 2050 for DTP1 despite maintaining current coverage rates, with similar patterns observed for measles vaccination.
+
+Even with continued historical improvements in coverage (historical progress projections), an estimated `r format_num(global_zero_dose_historical_2050)` children would remain unvaccinated against DTP1 in urban poor settings by 2050, with comparable challenges for measles vaccination. This finding underscores the critical importance of accelerating progress beyond historical trends to achieve global immunisation targets as articulated in the Immunisation Agenda 2030 [@ia2030].
+
+The gap between our projections and IA2030 targets is particularly concerning. To achieve the IA2030 goal of reducing zero-dose children by 50%, our analysis shows that historical rates of progress would be insufficient—even the most optimistic historical progress projection would leave millions of children unvaccinated in urban poor settings by 2050 for DTP1 and measles vaccination. Meeting these targets will require not only sustaining but substantially accelerating progress in coverage, with targeted approaches that specifically address the barriers faced by urban poor populations. The persistent inequity between urban poor and non-poor populations further challenges the equity objectives of IA2030, emphasizing the need for intervention strategies that explicitly prioritize reducing these disparities.
+
+Our findings highlight the importance of understanding the distinct dynamics of vaccination coverage in rapidly urbanizing contexts. The "Red Queen" effect—where population growth and urbanization necessitate substantial increases in coverage rates merely to maintain current absolute numbers of zero-dose children—represents a fundamental challenge for immunization planning. This demographic reality must be incorporated into policy frameworks and global targets to ensure realistic goal-setting and appropriate resource allocation.
+
+The substantial variation in vaccination coverage and zero-dose children across countries underscores that context-specific approaches are essential. Our stratified analysis of urban populations demonstrates that treating urban dwellers as a homogeneous group masks critical disparities that affect millions of children, particularly in countries with rapid urbanization in Africa and South Asia.
+
+Effective interventions to reduce zero-dose prevalence in urban areas will require multifaceted approaches that address both supply and demand-side barriers. Based on the literature and our findings, these should include:
+
+1.  **Community-based outreach programs**: Engaging community health workers to identify and track zero-dose children has shown success in urban settings like Dar es Salaam [@tanzania2023].
+
+2.  **Integration with other health services**: Linking immunization with antenatal care and childbirth services can reduce missed opportunities for vaccination in urban poor populations [@hogan2023].
+
+3.  **Digital innovations and geospatial targeting**: Leveraging technology for microplanning and real-time monitoring can improve service delivery in dense urban environments [@ingle2023].
+
+4.  **Gender-sensitive interventions**: Addressing gender-related barriers, such as limited decision-making power among women, is essential for improving immunization rates in urban poor settings [@ducharme2023].
+
+5.  **Cultural adaptation**: Tailoring health messaging and services to the needs of urban poor, migrants, and marginalized groups can enhance trust and uptake of immunization services [@tiwari2024].
+
+Future research should examine heterogeneity within urban poor populations, economic analyses of required investments, and the impacts of emerging demographic transitions on immunization systems. By recognizing urban poor populations as a distinct group with specific needs rather than assuming urban residence equates to better access, immunization programs can more effectively work toward achieving equitable coverage and meeting the ambitious goals of the Immunisation Agenda 2030.
+
+# Data Availability
+
+The data and code used for this analysis are available in a public repository at \[GitHub repository URL\]. This includes the raw data files, R implementation code, and analysis scripts to reproduce all figures and tables. The population projection data were sourced from UN World Population Prospects [@worldpopulationprospects], with urban proportions from the World Urbanization Prospects [@worldurbanizationprospects]. Historical vaccination coverage data were obtained from WHO/UNICEF estimates [@whounicefestimates], all of which are publicly available from their respective sources.
+
+# Competing Interests
+
+The authors declare no competing interests.
+
+# References
+
+::: {#refs}
+:::
+
+# Supplementary Figures
+
+::: {#suppfig-dtp-coverage}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=10}
+knitr::include_graphics("outputs/supplementary/dtp1_all_strata_coverage_comparison_plot.png")
+```
+
+DTP1 coverage comparison across all population strata (urban poor, urban non-poor, and rural) under historical progress and static projection methods (2025-2050).
+:::
+
+::: {#suppfig-dtp-zerodose}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=10}
+knitr::include_graphics("outputs/supplementary/dtp1_all_strata_zerodose_comparison_plot.png")
+```
+
+DTP1 zero-dose children comparison across all population strata (urban poor, urban non-poor, and rural) under historical progress and static projection methods (2025-2050).
+:::
+
+::: {#suppfig-measles-coverage}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=10}
+knitr::include_graphics("outputs/supplementary/measles_all_strata_coverage_comparison_plot.png")
+```
+
+Measles coverage comparison across all population strata (urban poor, urban non-poor, and rural) under historical progress and static projection methods (2025-2050).
+:::
+
+::: {#suppfig-measles-zerodose}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=12, fig.height=10}
+knitr::include_graphics("outputs/supplementary/measles_all_strata_zerodose_comparison_plot.png")
+```
+
+Measles zero-dose children comparison across all population strata (urban poor, urban non-poor, and rural) under historical progress and static projection methods (2025-2050).
+:::

@@ -1,0 +1,1765 @@
+year,measles1_coverage,measles2_coverage,zero_dose_percent,country
+2015,0.8765641025641024,0.8333333333333329,0.12343589743589742,Global
+2016,0.872615384615384,0.8228834355828221,0.12738461538461537,Global
+2017,0.8734358974358984,0.8311445783132531,0.1265641025641027,Global
+2018,0.8733846153846159,0.8313529411764706,0.12661538461538469,Global
+2019,0.8758461538461539,0.8120338983050843,0.12415384615384621,Global
+2020,0.848923076923077,0.7887150837988824,0.1510769230769231,Global
+2021,0.8329743589743589,0.7601092896174857,0.16702564102564108,Global
+2022,0.8406153846153844,0.7613368983957218,0.15938461538461546,Global
+2023,0.8521025641025639,0.7710526315789473,0.14789743589743595,Global
+2023,0.55,0.42,0.45,Afghanistan
+2022,0.56,0.42,0.44,Afghanistan
+2021,0.51,0.37,0.49,Afghanistan
+2020,0.57,0.38,0.43,Afghanistan
+2019,0.57,0.37,0.43,Afghanistan
+2018,0.66,0.46,0.34,Afghanistan
+2017,0.64,0.38,0.36,Afghanistan
+2016,0.64,0.4,0.36,Afghanistan
+2015,0.62,0.42,0.38,Afghanistan
+2023,0.83,0.93,0.17,Albania
+2022,0.86,0.93,0.14,Albania
+2021,0.87,0.92,0.13,Albania
+2020,0.91,0.94,0.09,Albania
+2019,0.95,0.96,0.05,Albania
+2018,0.94,0.96,0.06,Albania
+2017,0.96,0.98,0.04,Albania
+2016,0.96,0.98,0.04,Albania
+2015,0.97,0.98,0.03,Albania
+2023,0.99,0.93,0.01,Algeria
+2022,0.79,0.71,0.21,Algeria
+2021,0.79,0.73,0.21,Algeria
+2020,0.8,0.74,0.2,Algeria
+2019,0.8,0.76,0.2,Algeria
+2018,0.8,0.77,0.2,Algeria
+2017,0.88,0.92,0.12,Algeria
+2016,0.94,0.96,0.06,Algeria
+2015,0.95,0.99,0.05,Algeria
+2023,0.99,0.96,0.01,Andorra
+2022,0.98,0.96,0.02,Andorra
+2021,0.99,0.97,0.01,Andorra
+2020,0.98,0.93,0.02,Andorra
+2019,0.99,0.94,0.01,Andorra
+2018,0.99,0.95,0.01,Andorra
+2017,0.99,0.94,0.01,Andorra
+2016,0.97,0.9,0.03,Andorra
+2015,0.96,0.88,0.04,Andorra
+2023,0.5,0.35,0.5,Angola
+2022,0.37,0.25,0.63,Angola
+2021,0.36,0.22,0.64,Angola
+2020,0.44,0.29,0.56,Angola
+2019,0.51,0.33,0.49,Angola
+2018,0.5,0.23,0.5,Angola
+2017,0.42,0.18,0.58,Angola
+2016,0.45,0.16,0.55,Angola
+2015,0.51,0.16,0.49,Angola
+2023,0.94,0.87,0.06,Antigua and Barbuda
+2022,0.99,0.91,0.01,Antigua and Barbuda
+2021,0.85,0.76,0.15,Antigua and Barbuda
+2020,0.89,0.8,0.11,Antigua and Barbuda
+2019,0.93,0.8,0.07,Antigua and Barbuda
+2018,0.96,0.95,0.04,Antigua and Barbuda
+2017,0.99,0.95,0.01,Antigua and Barbuda
+2016,0.88,0.68,0.12,Antigua and Barbuda
+2015,0.91,0.84,0.09,Antigua and Barbuda
+2023,0.8,0.54,0.2,Argentina
+2022,0.85,0.94,0.15,Argentina
+2021,0.86,0.79,0.14,Argentina
+2020,0.77,0.71,0.23,Argentina
+2019,0.86,0.84,0.14,Argentina
+2018,0.94,0.99,0.06,Argentina
+2017,0.89,0.89,0.11,Argentina
+2016,0.9,0.88,0.1,Argentina
+2015,0.89,0.87,0.11,Argentina
+2023,0.96,0.96,0.04,Armenia
+2022,0.95,0.94,0.05,Armenia
+2021,0.94,0.94,0.06,Armenia
+2020,0.94,0.94,0.06,Armenia
+2019,0.95,0.96,0.05,Armenia
+2018,0.95,0.96,0.05,Armenia
+2017,0.96,0.97,0.04,Armenia
+2016,0.97,0.97,0.03,Armenia
+2015,0.97,0.97,0.03,Armenia
+2023,0.91,0.93,0.09,Australia
+2022,0.96,0.91,0.04,Australia
+2021,0.93,0.94,0.07,Australia
+2020,0.93,0.94,0.07,Australia
+2019,0.94,0.94,0.06,Australia
+2018,0.94,0.93,0.06,Australia
+2017,0.94,0.93,0.06,Australia
+2016,0.95,0.94,0.05,Australia
+2015,0.95,0.93,0.05,Australia
+2023,0.95,0.94,0.05,Austria
+2022,0.95,0.94,0.05,Austria
+2021,0.99,0.97,0.01,Austria
+2020,0.95,0.88,0.05,Austria
+2019,0.95,0.86,0.05,Austria
+2018,0.94,0.84,0.06,Austria
+2017,0.96,0.84,0.04,Austria
+2016,0.95,0.89,0.05,Austria
+2015,0.96,0.88,0.04,Austria
+2023,0.96,0.93,0.04,Azerbaijan
+2022,0.93,0.91,0.07,Azerbaijan
+2021,0.93,0.9,0.07,Azerbaijan
+2020,0.82,0.79,0.18,Azerbaijan
+2019,0.98,0.97,0.02,Azerbaijan
+2018,0.96,0.96,0.04,Azerbaijan
+2017,0.98,0.97,0.02,Azerbaijan
+2016,0.98,0.98,0.02,Azerbaijan
+2015,0.98,0.98,0.02,Azerbaijan
+2023,0.86,0.53,0.14,Bahamas
+2022,0.8,0.65,0.2,Bahamas
+2021,0.82,0.8,0.18,Bahamas
+2020,0.87,0.83,0.13,Bahamas
+2019,0.83,0.83,0.17,Bahamas
+2018,0.89,0.69,0.11,Bahamas
+2017,0.9,0.76,0.1,Bahamas
+2016,0.89,0.74,0.11,Bahamas
+2015,0.94,0.76,0.06,Bahamas
+2023,0.99,0.99,0.01,Bahrain
+2022,0.99,0.99,0.01,Bahrain
+2021,0.99,0.99,0.01,Bahrain
+2020,0.99,0.99,0.01,Bahrain
+2019,0.99,0.99,0.01,Bahrain
+2018,0.99,0.99,0.01,Bahrain
+2017,0.99,0.99,0.01,Bahrain
+2016,0.99,0.99,0.01,Bahrain
+2015,0.99,0.99,0.01,Bahrain
+2023,0.97,0.93,0.03,Bangladesh
+2022,0.97,0.93,0.03,Bangladesh
+2021,0.97,0.93,0.03,Bangladesh
+2020,0.97,0.93,0.03,Bangladesh
+2019,0.97,0.93,0.03,Bangladesh
+2018,0.97,0.93,0.03,Bangladesh
+2017,0.97,0.93,0.03,Bangladesh
+2016,0.97,0.92,0.03,Bangladesh
+2015,0.97,0.9,0.03,Bangladesh
+2023,0.89,0.76,0.11,Barbados
+2022,0.85,0.73,0.15,Barbados
+2021,0.77,0.7,0.23,Barbados
+2020,0.89,0.78,0.11,Barbados
+2019,0.92,0.77,0.08,Barbados
+2018,0.85,0.74,0.15,Barbados
+2017,0.92,0.77,0.08,Barbados
+2016,0.92,0.87,0.08,Barbados
+2015,0.96,0.89,0.04,Barbados
+2023,0.97,0.95,0.03,Belarus
+2022,0.98,0.98,0.02,Belarus
+2021,0.98,0.98,0.02,Belarus
+2020,0.97,0.98,0.03,Belarus
+2019,0.98,0.98,0.02,Belarus
+2018,0.98,0.98,0.02,Belarus
+2017,0.97,0.98,0.03,Belarus
+2016,0.98,0.98,0.02,Belarus
+2015,0.99,0.99,0.01,Belarus
+2023,0.96,0.82,0.04,Belgium
+2022,0.96,0.83,0.04,Belgium
+2021,0.96,0.83,0.04,Belgium
+2020,0.96,0.83,0.04,Belgium
+2019,0.96,0.82,0.04,Belgium
+2018,0.96,0.82,0.04,Belgium
+2017,0.96,0.82,0.04,Belgium
+2016,0.96,0.82,0.04,Belgium
+2015,0.96,0.8,0.04,Belgium
+2023,0.93,0.88,0.07,Belize
+2022,0.81,0.76,0.19,Belize
+2021,0.79,0.77,0.21,Belize
+2020,0.82,0.87,0.18,Belize
+2019,0.96,0.95,0.04,Belize
+2018,0.97,0.91,0.03,Belize
+2017,0.9,0.88,0.1,Belize
+2016,0.95,0.96,0.05,Belize
+2015,0.96,0.95,0.04,Belize
+2023,0.52,NA,0.48,Benin
+2022,0.52,NA,0.48,Benin
+2021,0.53,NA,0.47,Benin
+2020,0.54,NA,0.46,Benin
+2019,0.58,NA,0.42,Benin
+2018,0.61,NA,0.39,Benin
+2017,0.65,NA,0.35,Benin
+2016,0.68,NA,0.32,Benin
+2015,0.67,NA,0.33,Benin
+2023,0.99,0.97,0.01,Bhutan
+2022,0.97,0.97,0.03,Bhutan
+2021,0.97,0.91,0.03,Bhutan
+2020,0.93,0.92,0.07,Bhutan
+2019,0.97,0.92,0.03,Bhutan
+2018,0.97,0.91,0.03,Bhutan
+2017,0.97,0.99,0.03,Bhutan
+2016,0.97,0.9,0.03,Bhutan
+2015,0.97,0.94,0.03,Bhutan
+2023,0.68,0.5,0.32,Bolivia (Plurinational State of)
+2022,0.69,0.49,0.31,Bolivia (Plurinational State of)
+2021,0.75,0.56,0.25,Bolivia (Plurinational State of)
+2020,0.74,0.46,0.26,Bolivia (Plurinational State of)
+2019,0.79,0.44,0.21,Bolivia (Plurinational State of)
+2018,0.89,0.38,0.11,Bolivia (Plurinational State of)
+2017,0.83,NA,0.17,Bolivia (Plurinational State of)
+2016,0.94,NA,0.06,Bolivia (Plurinational State of)
+2015,0.95,NA,0.05,Bolivia (Plurinational State of)
+2023,0.55,0.63,0.45,Bosnia and Herzegovina
+2022,0.58,0.6,0.42,Bosnia and Herzegovina
+2021,0.61,0.63,0.39,Bosnia and Herzegovina
+2020,0.61,0.6,0.39,Bosnia and Herzegovina
+2019,0.65,0.68,0.35,Bosnia and Herzegovina
+2018,0.68,0.76,0.32,Bosnia and Herzegovina
+2017,0.69,0.8,0.31,Bosnia and Herzegovina
+2016,0.68,0.78,0.32,Bosnia and Herzegovina
+2015,0.83,0.88,0.17,Bosnia and Herzegovina
+2023,0.97,0.79,0.03,Botswana
+2022,0.9,0.77,0.1,Botswana
+2021,0.97,0.7,0.03,Botswana
+2020,0.87,0.66,0.13,Botswana
+2019,0.97,0.76,0.03,Botswana
+2018,0.97,0.74,0.03,Botswana
+2017,0.97,0.74,0.03,Botswana
+2016,0.97,0.74,0.03,Botswana
+2015,0.97,0.8,0.03,Botswana
+2023,0.87,0.64,0.13,Brazil
+2022,0.81,0.58,0.19,Brazil
+2021,0.73,0.46,0.27,Brazil
+2020,0.79,0.44,0.21,Brazil
+2019,0.91,0.54,0.09,Brazil
+2018,0.92,0.76,0.08,Brazil
+2017,0.87,0.67,0.13,Brazil
+2016,0.95,0.77,0.05,Brazil
+2015,0.96,0.8,0.04,Brazil
+2023,0.97,0.99,0.03,Brunei Darussalam
+2022,0.97,0.99,0.03,Brunei Darussalam
+2021,0.99,0.99,0.01,Brunei Darussalam
+2020,0.99,0.97,0.01,Brunei Darussalam
+2019,0.97,0.98,0.03,Brunei Darussalam
+2018,0.99,0.98,0.01,Brunei Darussalam
+2017,0.97,0.98,0.03,Brunei Darussalam
+2016,0.98,0.97,0.02,Brunei Darussalam
+2015,0.96,0.97,0.04,Brunei Darussalam
+2023,0.92,0.87,0.08,Bulgaria
+2022,0.91,0.87,0.09,Bulgaria
+2021,0.89,0.86,0.11,Bulgaria
+2020,0.88,0.84,0.12,Bulgaria
+2019,0.95,0.95,0.05,Bulgaria
+2018,0.93,0.87,0.07,Bulgaria
+2017,0.94,0.92,0.06,Bulgaria
+2016,0.92,0.88,0.08,Bulgaria
+2015,0.92,0.87,0.08,Bulgaria
+2023,0.94,0.71,0.06,Burkina Faso
+2022,0.91,0.71,0.09,Burkina Faso
+2021,0.88,0.71,0.12,Burkina Faso
+2020,0.88,0.71,0.12,Burkina Faso
+2019,0.88,0.71,0.12,Burkina Faso
+2018,0.88,0.71,0.12,Burkina Faso
+2017,0.88,0.65,0.12,Burkina Faso
+2016,0.88,0.59,0.12,Burkina Faso
+2015,0.88,0.5,0.12,Burkina Faso
+2023,0.86,0.8,0.14,Burundi
+2022,0.89,0.85,0.11,Burundi
+2021,0.9,0.85,0.1,Burundi
+2020,0.9,0.83,0.1,Burundi
+2019,0.92,0.8,0.08,Burundi
+2018,0.88,0.77,0.12,Burundi
+2017,0.9,0.75,0.1,Burundi
+2016,0.93,0.72,0.07,Burundi
+2015,0.93,0.65,0.07,Burundi
+2023,0.95,0.86,0.05,Cabo Verde
+2022,0.95,0.86,0.05,Cabo Verde
+2021,0.95,0.86,0.05,Cabo Verde
+2020,0.95,0.86,0.05,Cabo Verde
+2019,0.98,0.91,0.02,Cabo Verde
+2018,0.99,0.88,0.01,Cabo Verde
+2017,0.96,0.85,0.04,Cabo Verde
+2016,0.93,0.92,0.07,Cabo Verde
+2015,0.92,0.95,0.08,Cabo Verde
+2023,0.79,0.64,0.21,Cambodia
+2022,0.83,0.69,0.17,Cambodia
+2021,0.83,0.63,0.17,Cambodia
+2020,0.83,0.72,0.17,Cambodia
+2019,0.87,0.75,0.13,Cambodia
+2018,0.86,0.64,0.14,Cambodia
+2017,0.85,0.67,0.15,Cambodia
+2016,0.85,0.64,0.15,Cambodia
+2015,0.85,0.59,0.15,Cambodia
+2023,0.71,0.45,0.29,Cameroon
+2022,0.68,0.36,0.32,Cameroon
+2021,0.65,0.28,0.35,Cameroon
+2020,0.63,0.22,0.37,Cameroon
+2019,0.61,NA,0.39,Cameroon
+2018,0.61,NA,0.39,Cameroon
+2017,0.67,NA,0.33,Cameroon
+2016,0.72,NA,0.28,Cameroon
+2015,0.71,NA,0.29,Cameroon
+2023,0.92,0.79,0.08,Canada
+2022,0.92,0.79,0.08,Canada
+2021,0.9,0.83,0.1,Canada
+2020,0.9,0.83,0.1,Canada
+2019,0.9,0.87,0.1,Canada
+2018,0.9,0.87,0.1,Canada
+2017,0.9,0.87,0.1,Canada
+2016,0.89,0.86,0.11,Canada
+2015,0.89,0.86,0.11,Canada
+2023,0.41,NA,0.59,Central African Republic
+2022,0.41,NA,0.59,Central African Republic
+2021,0.41,NA,0.59,Central African Republic
+2020,0.41,NA,0.59,Central African Republic
+2019,0.41,NA,0.59,Central African Republic
+2018,0.41,NA,0.59,Central African Republic
+2017,0.41,NA,0.59,Central African Republic
+2016,0.45,NA,0.55,Central African Republic
+2015,0.46,NA,0.54,Central African Republic
+2023,0.63,0.35,0.37,Chad
+2022,0.54,0.02,0.46,Chad
+2021,0.53,NA,0.47,Chad
+2020,0.45,NA,0.55,Chad
+2019,0.4,NA,0.6,Chad
+2018,0.41,NA,0.59,Chad
+2017,0.37,NA,0.63,Chad
+2016,0.37,NA,0.63,Chad
+2015,0.46,NA,0.54,Chad
+2023,0.94,0.7,0.06,Chile
+2022,0.94,0.81,0.06,Chile
+2021,0.92,0.91,0.08,Chile
+2020,0.91,0.83,0.09,Chile
+2019,0.95,0.91,0.05,Chile
+2018,0.93,0.93,0.07,Chile
+2017,0.93,0.9,0.07,Chile
+2016,0.93,0.87,0.07,Chile
+2015,0.96,0.89,0.04,Chile
+2023,0.97,0.95,0.03,China
+2022,0.99,0.99,0.01,China
+2021,0.99,0.99,0.01,China
+2020,0.99,0.99,0.01,China
+2019,0.99,0.98,0.01,China
+2018,0.99,0.99,0.01,China
+2017,0.99,0.99,0.01,China
+2016,0.99,0.99,0.01,China
+2015,0.99,0.99,0.01,China
+2023,0.93,0.84,0.07,Colombia
+2022,0.88,0.84,0.12,Colombia
+2021,0.86,0.86,0.14,Colombia
+2020,0.9,0.88,0.1,Colombia
+2019,0.95,0.89,0.05,Colombia
+2018,0.95,0.88,0.05,Colombia
+2017,0.93,0.89,0.07,Colombia
+2016,0.93,0.87,0.07,Colombia
+2015,0.94,0.86,0.06,Colombia
+2023,0.7,0.79,0.3,Comoros
+2022,0.71,0.79,0.29,Comoros
+2021,0.68,0.19,0.32,Comoros
+2020,0.75,NA,0.25,Comoros
+2019,0.76,NA,0.24,Comoros
+2018,0.74,NA,0.26,Comoros
+2017,0.75,NA,0.25,Comoros
+2016,0.77,NA,0.23,Comoros
+2015,0.81,NA,0.19,Comoros
+2023,0.65,0.34,0.35,Congo
+2022,0.65,0.34,0.35,Congo
+2021,0.68,0.31,0.32,Congo
+2020,0.68,0.29,0.32,Congo
+2019,0.73,0.09,0.27,Congo
+2018,0.75,NA,0.25,Congo
+2017,0.7,NA,0.3,Congo
+2016,0.67,NA,0.33,Congo
+2015,0.8,NA,0.2,Congo
+2023,0.84,0.77,0.16,Cook Islands
+2022,0.61,0.51,0.39,Cook Islands
+2021,0.74,0.67,0.26,Cook Islands
+2020,0.87,0.82,0.13,Cook Islands
+2019,0.99,0.98,0.01,Cook Islands
+2018,0.99,0.99,0.01,Cook Islands
+2017,0.98,0.95,0.02,Cook Islands
+2016,0.9,0.9,0.1,Cook Islands
+2015,0.99,0.95,0.01,Cook Islands
+2023,0.93,0.83,0.07,Costa Rica
+2022,0.9,0.75,0.1,Costa Rica
+2021,0.89,0.69,0.11,Costa Rica
+2020,0.95,0.81,0.05,Costa Rica
+2019,0.95,0.93,0.05,Costa Rica
+2018,0.94,0.93,0.06,Costa Rica
+2017,0.96,0.93,0.04,Costa Rica
+2016,0.93,0.87,0.07,Costa Rica
+2015,0.93,0.9,0.07,Costa Rica
+2023,0.7,0.43,0.3,Cote d'Ivoire
+2022,0.62,0.2,0.38,Cote d'Ivoire
+2021,0.65,0.01,0.35,Cote d'Ivoire
+2020,0.63,NA,0.37,Cote d'Ivoire
+2019,0.71,NA,0.29,Cote d'Ivoire
+2018,0.74,NA,0.26,Cote d'Ivoire
+2017,0.7,NA,0.3,Cote d'Ivoire
+2016,0.73,NA,0.27,Cote d'Ivoire
+2015,0.67,NA,0.33,Cote d'Ivoire
+2023,0.9,0.9,0.1,Croatia
+2022,0.9,0.9,0.1,Croatia
+2021,0.89,0.9,0.11,Croatia
+2020,0.91,0.91,0.09,Croatia
+2019,0.93,0.95,0.07,Croatia
+2018,0.93,0.95,0.07,Croatia
+2017,0.89,0.95,0.11,Croatia
+2016,0.9,0.96,0.1,Croatia
+2015,0.93,0.96,0.07,Croatia
+2023,0.99,0.99,0.01,Cuba
+2022,0.99,0.99,0.01,Cuba
+2021,0.99,0.99,0.01,Cuba
+2020,0.98,0.99,0.02,Cuba
+2019,0.99,0.99,0.01,Cuba
+2018,0.99,0.99,0.01,Cuba
+2017,0.99,0.99,0.01,Cuba
+2016,0.99,0.99,0.01,Cuba
+2015,0.99,0.99,0.01,Cuba
+2023,0.82,0.8,0.18,Cyprus
+2022,0.84,0.88,0.16,Cyprus
+2021,0.86,0.88,0.14,Cyprus
+2020,0.86,0.88,0.14,Cyprus
+2019,0.86,0.88,0.14,Cyprus
+2018,0.9,0.88,0.1,Cyprus
+2017,0.9,0.88,0.1,Cyprus
+2016,0.9,0.88,0.1,Cyprus
+2015,0.9,0.88,0.1,Cyprus
+2023,0.87,0.9,0.13,Czechia
+2022,0.97,0.9,0.03,Czechia
+2021,0.97,0.9,0.03,Czechia
+2020,0.94,0.9,0.06,Czechia
+2019,0.92,0.87,0.08,Czechia
+2018,0.96,0.84,0.04,Czechia
+2017,0.97,0.9,0.03,Czechia
+2016,0.98,0.93,0.02,Czechia
+2015,0.99,0.99,0.01,Czechia
+2023,0.28,0.16,0.72,Democratic People's Republic of Korea
+2022,0.67,0,0.33,Democratic People's Republic of Korea
+2021,0.99,0.91,0.01,Democratic People's Republic of Korea
+2020,0.99,0.99,0.01,Democratic People's Republic of Korea
+2019,0.98,0.98,0.02,Democratic People's Republic of Korea
+2018,0.98,0.99,0.02,Democratic People's Republic of Korea
+2017,0.99,0.98,0.01,Democratic People's Republic of Korea
+2016,0.99,0.98,0.01,Democratic People's Republic of Korea
+2015,0.98,0.85,0.02,Democratic People's Republic of Korea
+2023,0.52,0.18,0.48,Democratic Republic of the Congo
+2022,0.56,NA,0.44,Democratic Republic of the Congo
+2021,0.55,NA,0.45,Democratic Republic of the Congo
+2020,0.62,NA,0.38,Democratic Republic of the Congo
+2019,0.65,NA,0.35,Democratic Republic of the Congo
+2018,0.64,NA,0.36,Democratic Republic of the Congo
+2017,0.65,NA,0.35,Democratic Republic of the Congo
+2016,0.63,NA,0.37,Democratic Republic of the Congo
+2015,0.65,NA,0.35,Democratic Republic of the Congo
+2023,0.95,0.93,0.05,Denmark
+2022,0.95,0.94,0.05,Denmark
+2021,0.95,0.94,0.05,Denmark
+2020,0.94,0.9,0.06,Denmark
+2019,0.96,0.9,0.04,Denmark
+2018,0.95,0.9,0.05,Denmark
+2017,0.97,0.88,0.03,Denmark
+2016,0.94,0.85,0.06,Denmark
+2015,0.91,0.8,0.09,Denmark
+2023,0.76,0.64,0.24,Djibouti
+2022,0.5,0.48,0.5,Djibouti
+2021,0.5,0.48,0.5,Djibouti
+2020,0.62,0.6,0.38,Djibouti
+2019,0.83,0.81,0.17,Djibouti
+2018,0.86,0.81,0.14,Djibouti
+2017,0.81,0.81,0.19,Djibouti
+2016,0.75,0.81,0.25,Djibouti
+2015,0.74,0.82,0.26,Djibouti
+2023,0.87,0.87,0.13,Dominica
+2022,0.87,0.87,0.13,Dominica
+2021,0.88,0.87,0.12,Dominica
+2020,0.92,0.9,0.08,Dominica
+2019,0.92,0.92,0.08,Dominica
+2018,0.84,0.81,0.16,Dominica
+2017,0.77,0.81,0.23,Dominica
+2016,0.96,0.92,0.04,Dominica
+2015,0.96,0.94,0.04,Dominica
+2023,0.94,0.7,0.06,Dominican Republic
+2022,0.91,0.65,0.09,Dominican Republic
+2021,0.88,0.6,0.12,Dominican Republic
+2020,0.82,0.55,0.18,Dominican Republic
+2019,0.96,0.6,0.04,Dominican Republic
+2018,0.91,0.31,0.09,Dominican Republic
+2017,0.86,NA,0.14,Dominican Republic
+2016,0.85,NA,0.15,Dominican Republic
+2015,0.9,NA,0.1,Dominican Republic
+2023,0.74,0.6,0.26,Ecuador
+2022,0.74,0.6,0.26,Ecuador
+2021,0.65,0.58,0.35,Ecuador
+2020,0.81,0.7,0.19,Ecuador
+2019,0.83,0.76,0.17,Ecuador
+2018,0.83,0.74,0.17,Ecuador
+2017,0.81,0.73,0.19,Ecuador
+2016,0.86,0.64,0.14,Ecuador
+2015,0.84,0.76,0.16,Ecuador
+2023,0.96,0.95,0.04,Egypt
+2022,0.96,0.96,0.04,Egypt
+2021,0.96,0.96,0.04,Egypt
+2020,0.94,0.94,0.06,Egypt
+2019,0.95,0.94,0.05,Egypt
+2018,0.94,0.94,0.06,Egypt
+2017,0.94,0.94,0.06,Egypt
+2016,0.95,0.96,0.05,Egypt
+2015,0.92,0.92,0.08,Egypt
+2023,0.99,0.71,0.01,El Salvador
+2022,0.8,0.72,0.2,El Salvador
+2021,0.97,0.8,0.03,El Salvador
+2020,0.84,0.66,0.16,El Salvador
+2019,0.96,0.76,0.04,El Salvador
+2018,0.87,0.85,0.13,El Salvador
+2017,0.89,0.86,0.11,El Salvador
+2016,0.98,0.87,0.02,El Salvador
+2015,0.97,0.88,0.03,El Salvador
+2023,0.61,0.28,0.39,Equatorial Guinea
+2022,0.49,0.13,0.51,Equatorial Guinea
+2021,0.5,0.17,0.5,Equatorial Guinea
+2020,0.5,NA,0.5,Equatorial Guinea
+2019,0.51,NA,0.49,Equatorial Guinea
+2018,0.52,NA,0.48,Equatorial Guinea
+2017,0.52,NA,0.48,Equatorial Guinea
+2016,0.53,NA,0.47,Equatorial Guinea
+2015,0.5,NA,0.5,Equatorial Guinea
+2023,0.93,0.85,0.07,Eritrea
+2022,0.93,0.85,0.07,Eritrea
+2021,0.93,0.85,0.07,Eritrea
+2020,0.93,0.85,0.07,Eritrea
+2019,0.93,0.85,0.07,Eritrea
+2018,0.93,0.85,0.07,Eritrea
+2017,0.93,0.88,0.07,Eritrea
+2016,0.95,0.88,0.05,Eritrea
+2015,0.97,0.88,0.03,Eritrea
+2023,0.89,0.84,0.11,Estonia
+2022,0.89,0.84,0.11,Estonia
+2021,0.89,0.84,0.11,Estonia
+2020,0.91,0.87,0.09,Estonia
+2019,0.88,0.9,0.12,Estonia
+2018,0.87,0.88,0.13,Estonia
+2017,0.93,0.91,0.07,Estonia
+2016,0.93,0.92,0.07,Estonia
+2015,0.93,0.92,0.07,Estonia
+2023,0.85,0.82,0.15,Eswatini
+2022,0.83,0.77,0.17,Eswatini
+2021,0.8,0.69,0.2,Eswatini
+2020,0.76,0.7,0.24,Eswatini
+2019,0.81,0.75,0.19,Eswatini
+2018,0.85,0.75,0.15,Eswatini
+2017,0.89,0.7,0.11,Eswatini
+2016,0.89,0.76,0.11,Eswatini
+2015,0.89,0.83,0.11,Eswatini
+2023,0.61,0.53,0.39,Ethiopia
+2022,0.55,0.48,0.45,Ethiopia
+2021,0.53,0.46,0.47,Ethiopia
+2020,0.59,0.46,0.41,Ethiopia
+2019,0.57,0.41,0.43,Ethiopia
+2018,0.54,NA,0.46,Ethiopia
+2017,0.58,NA,0.42,Ethiopia
+2016,0.57,NA,0.43,Ethiopia
+2015,0.55,NA,0.45,Ethiopia
+2023,0.99,0.83,0.01,Fiji
+2022,0.99,0.84,0.01,Fiji
+2021,0.99,0.78,0.01,Fiji
+2020,0.96,0.71,0.04,Fiji
+2019,0.96,0.72,0.04,Fiji
+2018,0.95,0.89,0.05,Fiji
+2017,0.99,0.86,0.01,Fiji
+2016,0.97,0.83,0.03,Fiji
+2015,0.97,0.94,0.03,Fiji
+2023,0.94,0.92,0.06,Finland
+2022,0.94,0.92,0.06,Finland
+2021,0.93,0.93,0.07,Finland
+2020,0.95,0.93,0.05,Finland
+2019,0.96,0.93,0.04,Finland
+2018,0.96,0.93,0.04,Finland
+2017,0.94,0.92,0.06,Finland
+2016,0.94,0.85,0.06,Finland
+2015,0.95,NA,0.05,Finland
+2023,0.95,0.93,0.05,France
+2022,0.95,0.92,0.05,France
+2021,0.94,0.91,0.06,France
+2020,0.94,0.9,0.06,France
+2019,0.92,0.86,0.08,France
+2018,0.9,0.83,0.1,France
+2017,0.9,0.8,0.1,France
+2016,0.9,0.8,0.1,France
+2015,0.91,0.79,0.09,France
+2023,0.66,NA,0.34,Gabon
+2022,0.52,NA,0.48,Gabon
+2021,0.64,NA,0.36,Gabon
+2020,0.53,NA,0.47,Gabon
+2019,0.62,NA,0.38,Gabon
+2018,0.59,NA,0.41,Gabon
+2017,0.63,NA,0.37,Gabon
+2016,0.64,NA,0.36,Gabon
+2015,0.68,NA,0.32,Gabon
+2023,0.8,0.73,0.2,Gambia
+2022,0.74,0.52,0.26,Gambia
+2021,0.79,0.61,0.21,Gambia
+2020,0.82,0.61,0.18,Gambia
+2019,0.85,0.61,0.15,Gambia
+2018,0.91,0.71,0.09,Gambia
+2017,0.9,0.68,0.1,Gambia
+2016,0.97,0.79,0.03,Gambia
+2015,0.97,0.81,0.03,Gambia
+2023,0.95,0.86,0.05,Georgia
+2022,0.9,0.78,0.1,Georgia
+2021,0.9,0.81,0.1,Georgia
+2020,0.91,0.77,0.09,Georgia
+2019,0.99,0.97,0.01,Georgia
+2018,0.98,0.96,0.02,Georgia
+2017,0.95,0.9,0.05,Georgia
+2016,0.93,0.85,0.07,Georgia
+2015,0.96,0.91,0.04,Georgia
+2023,0.97,0.93,0.03,Germany
+2022,0.97,0.93,0.03,Germany
+2021,0.97,0.93,0.03,Germany
+2020,0.97,0.93,0.03,Germany
+2019,0.97,0.93,0.03,Germany
+2018,0.97,0.93,0.03,Germany
+2017,0.97,0.93,0.03,Germany
+2016,0.97,0.93,0.03,Germany
+2015,0.97,0.93,0.03,Germany
+2023,0.9,0.78,0.1,Ghana
+2022,0.95,0.84,0.05,Ghana
+2021,0.94,0.83,0.06,Ghana
+2020,0.88,0.79,0.12,Ghana
+2019,0.92,0.83,0.08,Ghana
+2018,0.92,0.83,0.08,Ghana
+2017,0.95,0.83,0.05,Ghana
+2016,0.89,0.75,0.11,Ghana
+2015,0.89,0.63,0.11,Ghana
+2023,0.97,0.83,0.03,Greece
+2022,0.97,0.83,0.03,Greece
+2021,0.97,0.83,0.03,Greece
+2020,0.97,0.83,0.03,Greece
+2019,0.97,0.83,0.03,Greece
+2018,0.97,0.83,0.03,Greece
+2017,0.97,0.83,0.03,Greece
+2016,0.97,0.83,0.03,Greece
+2015,0.97,0.83,0.03,Greece
+2023,0.82,0.84,0.18,Grenada
+2022,0.76,0.68,0.24,Grenada
+2021,0.7,0.55,0.3,Grenada
+2020,0.83,0.79,0.17,Grenada
+2019,0.94,0.82,0.06,Grenada
+2018,0.84,0.74,0.16,Grenada
+2017,0.85,0.79,0.15,Grenada
+2016,0.95,0.85,0.05,Grenada
+2015,0.99,0.89,0.01,Grenada
+2023,0.88,0.77,0.12,Guatemala
+2022,0.86,0.71,0.14,Guatemala
+2021,0.88,0.79,0.12,Guatemala
+2020,0.89,0.79,0.11,Guatemala
+2019,0.9,0.78,0.1,Guatemala
+2018,0.89,0.78,0.11,Guatemala
+2017,0.94,0.89,0.06,Guatemala
+2016,0.89,0.67,0.11,Guatemala
+2015,0.79,NA,0.21,Guatemala
+2023,0.47,0.26,0.53,Guinea
+2022,0.47,0.03,0.53,Guinea
+2021,0.47,NA,0.53,Guinea
+2020,0.47,NA,0.53,Guinea
+2019,0.47,NA,0.53,Guinea
+2018,0.47,NA,0.53,Guinea
+2017,0.47,NA,0.53,Guinea
+2016,0.47,NA,0.53,Guinea
+2015,0.47,NA,0.53,Guinea
+2023,0.72,0.36,0.28,Guinea-Bissau
+2022,0.75,0.01,0.25,Guinea-Bissau
+2021,0.63,NA,0.37,Guinea-Bissau
+2020,0.72,NA,0.28,Guinea-Bissau
+2019,0.79,NA,0.21,Guinea-Bissau
+2018,0.79,NA,0.21,Guinea-Bissau
+2017,0.66,NA,0.34,Guinea-Bissau
+2016,0.8,NA,0.2,Guinea-Bissau
+2015,0.8,NA,0.2,Guinea-Bissau
+2023,0.95,0.99,0.05,Guyana
+2022,0.95,0.99,0.05,Guyana
+2021,0.95,0.83,0.05,Guyana
+2020,0.98,0.97,0.02,Guyana
+2019,0.98,0.92,0.02,Guyana
+2018,0.98,0.84,0.02,Guyana
+2017,0.99,0.93,0.01,Guyana
+2016,0.99,0.94,0.01,Guyana
+2015,0.99,0.95,0.01,Guyana
+2023,0.65,0.41,0.35,Haiti
+2022,0.65,0.41,0.35,Haiti
+2021,0.65,0.41,0.35,Haiti
+2020,0.65,0.41,0.35,Haiti
+2019,0.65,0.41,0.35,Haiti
+2018,0.69,0.38,0.31,Haiti
+2017,0.69,0.25,0.31,Haiti
+2016,0.69,0.26,0.31,Haiti
+2015,0.69,NA,0.31,Haiti
+2023,0.77,0.74,0.23,Honduras
+2022,0.77,0.7,0.23,Honduras
+2021,0.81,0.75,0.19,Honduras
+2020,0.82,0.79,0.18,Honduras
+2019,0.89,0.85,0.11,Honduras
+2018,0.91,0.94,0.09,Honduras
+2017,0.98,NA,0.02,Honduras
+2016,0.98,NA,0.02,Honduras
+2015,0.98,NA,0.02,Honduras
+2023,0.99,0.99,0.01,Hungary
+2022,0.99,0.99,0.01,Hungary
+2021,0.99,0.99,0.01,Hungary
+2020,0.99,0.99,0.01,Hungary
+2019,0.99,0.99,0.01,Hungary
+2018,0.99,0.99,0.01,Hungary
+2017,0.99,0.99,0.01,Hungary
+2016,0.99,0.99,0.01,Hungary
+2015,0.99,0.99,0.01,Hungary
+2023,0.91,0.89,0.09,Iceland
+2022,0.91,0.8,0.09,Iceland
+2021,0.92,0.1,0.08,Iceland
+2020,0.93,0.93,0.07,Iceland
+2019,0.93,0.94,0.07,Iceland
+2018,0.93,0.95,0.07,Iceland
+2017,0.92,0.95,0.08,Iceland
+2016,0.91,0.95,0.09,Iceland
+2015,0.93,0.94,0.07,Iceland
+2023,0.93,0.9,0.07,India
+2022,0.95,0.9,0.05,India
+2021,0.89,0.82,0.11,India
+2020,0.89,0.81,0.11,India
+2019,0.95,0.84,0.05,India
+2018,0.93,0.82,0.07,India
+2017,0.9,0.8,0.1,India
+2016,0.88,0.76,0.12,India
+2015,0.87,0.69,0.13,India
+2023,0.82,0.62,0.18,Indonesia
+2022,0.92,0.71,0.08,Indonesia
+2021,0.72,0.53,0.28,Indonesia
+2020,0.76,0.6,0.24,Indonesia
+2019,0.88,0.71,0.12,Indonesia
+2018,0.89,0.67,0.11,Indonesia
+2017,0.9,0.63,0.1,Indonesia
+2016,0.88,0.55,0.12,Indonesia
+2015,0.87,0.31,0.13,Indonesia
+2023,0.99,0.99,0.01,Iran (Islamic Republic of)
+2022,0.99,0.98,0.01,Iran (Islamic Republic of)
+2021,0.99,0.98,0.01,Iran (Islamic Republic of)
+2020,0.99,0.98,0.01,Iran (Islamic Republic of)
+2019,0.99,0.98,0.01,Iran (Islamic Republic of)
+2018,0.99,0.98,0.01,Iran (Islamic Republic of)
+2017,0.99,0.98,0.01,Iran (Islamic Republic of)
+2016,0.99,0.98,0.01,Iran (Islamic Republic of)
+2015,0.99,0.98,0.01,Iran (Islamic Republic of)
+2023,0.97,0.83,0.03,Iraq
+2022,0.97,0.97,0.03,Iraq
+2021,0.84,0.84,0.16,Iraq
+2020,0.93,0.93,0.07,Iraq
+2019,0.86,0.86,0.14,Iraq
+2018,0.85,0.83,0.15,Iraq
+2017,0.81,0.84,0.19,Iraq
+2016,0.79,0.75,0.21,Iraq
+2015,0.71,0.76,0.29,Iraq
+2023,0.89,NA,0.11,Ireland
+2022,0.9,NA,0.1,Ireland
+2021,0.9,NA,0.1,Ireland
+2020,0.92,NA,0.08,Ireland
+2019,0.91,NA,0.09,Ireland
+2018,0.92,NA,0.08,Ireland
+2017,0.92,NA,0.08,Ireland
+2016,0.92,NA,0.08,Ireland
+2015,0.93,NA,0.07,Ireland
+2023,0.98,0.92,0.02,Israel
+2022,0.98,0.92,0.02,Israel
+2021,0.99,0.93,0.01,Israel
+2020,0.99,0.96,0.01,Israel
+2019,0.99,0.96,0.01,Israel
+2018,0.98,0.96,0.02,Israel
+2017,0.98,0.96,0.02,Israel
+2016,0.97,0.97,0.03,Israel
+2015,0.98,0.97,0.02,Israel
+2023,0.95,0.85,0.05,Italy
+2022,0.94,0.85,0.06,Italy
+2021,0.94,0.86,0.06,Italy
+2020,0.92,0.86,0.08,Italy
+2019,0.94,0.88,0.06,Italy
+2018,0.93,0.89,0.07,Italy
+2017,0.92,0.86,0.08,Italy
+2016,0.87,0.82,0.13,Italy
+2015,0.85,0.83,0.15,Italy
+2023,0.93,0.89,0.07,Jamaica
+2022,0.91,0.83,0.09,Jamaica
+2021,0.88,0.85,0.12,Jamaica
+2020,0.93,0.89,0.07,Jamaica
+2019,0.94,0.92,0.06,Jamaica
+2018,0.89,0.82,0.11,Jamaica
+2017,0.95,0.95,0.05,Jamaica
+2016,0.95,0.85,0.05,Jamaica
+2015,0.91,0.83,0.09,Jamaica
+2023,0.94,0.94,0.06,Japan
+2022,0.98,0.95,0.02,Japan
+2021,0.95,0.94,0.05,Japan
+2020,0.98,0.95,0.02,Japan
+2019,0.96,0.93,0.04,Japan
+2018,0.97,0.93,0.03,Japan
+2017,0.97,0.95,0.03,Japan
+2016,0.96,0.93,0.04,Japan
+2015,0.96,0.93,0.04,Japan
+2023,0.95,0.89,0.05,Jordan
+2022,0.86,0.8,0.14,Jordan
+2021,0.81,0.85,0.19,Jordan
+2020,0.76,0.9,0.24,Jordan
+2019,0.87,0.93,0.13,Jordan
+2018,0.92,0.96,0.08,Jordan
+2017,0.93,0.99,0.07,Jordan
+2016,0.96,0.99,0.04,Jordan
+2015,0.94,0.96,0.06,Jordan
+2023,0.99,0.99,0.01,Kazakhstan
+2022,0.99,0.97,0.01,Kazakhstan
+2021,0.97,0.96,0.03,Kazakhstan
+2020,0.93,0.91,0.07,Kazakhstan
+2019,0.99,0.98,0.01,Kazakhstan
+2018,0.99,0.98,0.01,Kazakhstan
+2017,0.99,0.99,0.01,Kazakhstan
+2016,0.99,0.99,0.01,Kazakhstan
+2015,0.99,0.98,0.01,Kazakhstan
+2023,0.91,0.76,0.09,Kenya
+2022,0.89,0.7,0.11,Kenya
+2021,0.9,0.71,0.1,Kenya
+2020,0.89,0.67,0.11,Kenya
+2019,0.92,0.6,0.08,Kenya
+2018,0.92,0.53,0.08,Kenya
+2017,0.84,0.41,0.16,Kenya
+2016,0.93,0.35,0.07,Kenya
+2015,0.96,0.28,0.04,Kenya
+2023,0.79,0.47,0.21,Kiribati
+2022,0.85,0.68,0.15,Kiribati
+2021,0.8,0.58,0.2,Kiribati
+2020,0.82,0.57,0.18,Kiribati
+2019,0.94,0.91,0.06,Kiribati
+2018,0.84,0.85,0.16,Kiribati
+2017,0.81,0.79,0.19,Kiribati
+2016,0.8,0.79,0.2,Kiribati
+2015,0.84,0.76,0.16,Kiribati
+2023,0.99,0.91,0.01,Kuwait
+2022,0.99,0.94,0.01,Kuwait
+2021,0.94,0.94,0.06,Kuwait
+2020,0.95,0.94,0.05,Kuwait
+2019,0.97,0.94,0.03,Kuwait
+2018,0.98,0.94,0.02,Kuwait
+2017,0.99,0.99,0.01,Kuwait
+2016,0.99,0.99,0.01,Kuwait
+2015,0.93,0.96,0.07,Kuwait
+2023,0.96,0.93,0.04,Kyrgyzstan
+2022,0.94,0.95,0.06,Kyrgyzstan
+2021,0.93,0.97,0.07,Kyrgyzstan
+2020,0.92,0.93,0.08,Kyrgyzstan
+2019,0.96,0.98,0.04,Kyrgyzstan
+2018,0.96,0.96,0.04,Kyrgyzstan
+2017,0.95,0.96,0.05,Kyrgyzstan
+2016,0.97,0.98,0.03,Kyrgyzstan
+2015,0.99,0.96,0.01,Kyrgyzstan
+2023,0.8,0.68,0.2,Lao People's Democratic Republic
+2022,0.76,0.55,0.24,Lao People's Democratic Republic
+2021,0.73,0.5,0.27,Lao People's Democratic Republic
+2020,0.79,0.64,0.21,Lao People's Democratic Republic
+2019,0.83,0.56,0.17,Lao People's Democratic Republic
+2018,0.86,0.7,0.14,Lao People's Democratic Republic
+2017,0.86,0.01,0.14,Lao People's Democratic Republic
+2016,0.81,NA,0.19,Lao People's Democratic Republic
+2015,0.81,NA,0.19,Lao People's Democratic Republic
+2023,0.96,0.92,0.04,Latvia
+2022,0.96,0.86,0.04,Latvia
+2021,0.97,0.85,0.03,Latvia
+2020,0.99,0.94,0.01,Latvia
+2019,0.99,0.96,0.01,Latvia
+2018,0.98,0.94,0.02,Latvia
+2017,0.96,0.89,0.04,Latvia
+2016,0.93,0.89,0.07,Latvia
+2015,0.96,0.92,0.04,Latvia
+2023,0.73,0.53,0.27,Lebanon
+2022,0.67,0.59,0.33,Lebanon
+2021,0.67,0.59,0.33,Lebanon
+2020,0.74,0.64,0.26,Lebanon
+2019,0.81,0.63,0.19,Lebanon
+2018,0.81,0.63,0.19,Lebanon
+2017,0.81,0.63,0.19,Lebanon
+2016,0.81,0.63,0.19,Lebanon
+2015,0.82,0.63,0.18,Lebanon
+2023,0.9,0.82,0.1,Lesotho
+2022,0.81,0.75,0.19,Lesotho
+2021,0.9,0.82,0.1,Lesotho
+2020,0.9,0.82,0.1,Lesotho
+2019,0.9,0.82,0.1,Lesotho
+2018,0.9,0.82,0.1,Lesotho
+2017,0.9,0.82,0.1,Lesotho
+2016,0.9,0.82,0.1,Lesotho
+2015,0.93,0.82,0.07,Lesotho
+2023,0.82,0.6,0.18,Liberia
+2022,0.79,0.59,0.21,Liberia
+2021,0.58,0.35,0.42,Liberia
+2020,0.61,0.3,0.39,Liberia
+2019,0.68,0.13,0.32,Liberia
+2018,0.74,NA,0.26,Liberia
+2017,0.75,NA,0.25,Liberia
+2016,0.7,NA,0.3,Liberia
+2015,0.64,NA,0.36,Liberia
+2023,0.73,0.72,0.27,Libya
+2022,0.73,0.72,0.27,Libya
+2021,0.73,0.72,0.27,Libya
+2020,0.73,0.72,0.27,Libya
+2019,0.73,0.72,0.27,Libya
+2018,0.73,0.72,0.27,Libya
+2017,0.94,0.94,0.06,Libya
+2016,0.97,0.96,0.03,Libya
+2015,0.98,0.97,0.02,Libya
+2023,0.87,0.86,0.13,Lithuania
+2022,0.87,0.87,0.13,Lithuania
+2021,0.88,0.88,0.12,Lithuania
+2020,0.9,0.91,0.1,Lithuania
+2019,0.93,0.93,0.07,Lithuania
+2018,0.92,0.92,0.08,Lithuania
+2017,0.94,0.92,0.06,Lithuania
+2016,0.94,0.92,0.06,Lithuania
+2015,0.94,0.92,0.06,Lithuania
+2023,0.99,0.9,0.01,Luxembourg
+2022,0.99,0.9,0.01,Luxembourg
+2021,0.99,0.9,0.01,Luxembourg
+2020,0.99,0.9,0.01,Luxembourg
+2019,0.99,0.9,0.01,Luxembourg
+2018,0.99,0.9,0.01,Luxembourg
+2017,0.99,0.86,0.01,Luxembourg
+2016,0.99,0.86,0.01,Luxembourg
+2015,0.99,0.86,0.01,Luxembourg
+2023,0.51,0.47,0.49,Madagascar
+2022,0.44,0.32,0.56,Madagascar
+2021,0.44,0.24,0.56,Madagascar
+2020,0.55,0.14,0.45,Madagascar
+2019,0.6,NA,0.4,Madagascar
+2018,0.68,NA,0.32,Madagascar
+2017,0.55,NA,0.45,Madagascar
+2016,0.62,NA,0.38,Madagascar
+2015,0.6,NA,0.4,Madagascar
+2023,0.87,0.65,0.13,Malawi
+2022,0.82,0.6,0.18,Malawi
+2021,0.9,0.74,0.1,Malawi
+2020,0.9,0.75,0.1,Malawi
+2019,0.92,0.75,0.08,Malawi
+2018,0.87,0.72,0.13,Malawi
+2017,0.83,0.67,0.17,Malawi
+2016,0.81,0.61,0.19,Malawi
+2015,0.87,0.08,0.13,Malawi
+2023,0.96,0.96,0.04,Malaysia
+2022,0.96,0.96,0.04,Malaysia
+2021,0.96,0.98,0.04,Malaysia
+2020,0.95,0.84,0.05,Malaysia
+2019,0.97,0.87,0.03,Malaysia
+2018,0.98,0.88,0.02,Malaysia
+2017,0.96,0.99,0.04,Malaysia
+2016,0.94,0.99,0.06,Malaysia
+2015,0.93,0.99,0.07,Malaysia
+2023,0.99,0.99,0.01,Maldives
+2022,0.98,0.98,0.02,Maldives
+2021,0.97,0.98,0.03,Maldives
+2020,0.98,0.97,0.02,Maldives
+2019,0.99,0.96,0.01,Maldives
+2018,0.99,0.99,0.01,Maldives
+2017,0.99,0.99,0.01,Maldives
+2016,0.99,0.99,0.01,Maldives
+2015,0.99,0.99,0.01,Maldives
+2023,0.73,0.59,0.27,Mali
+2022,0.73,0.44,0.27,Mali
+2021,0.72,0.33,0.28,Mali
+2020,0.62,0.26,0.38,Mali
+2019,0.71,0.04,0.29,Mali
+2018,0.71,NA,0.29,Mali
+2017,0.7,NA,0.3,Mali
+2016,0.7,NA,0.3,Mali
+2015,0.65,NA,0.35,Mali
+2023,0.95,0.95,0.05,Malta
+2022,0.96,0.95,0.04,Malta
+2021,0.9,0.93,0.1,Malta
+2020,0.95,0.99,0.05,Malta
+2019,0.96,0.95,0.04,Malta
+2018,0.96,0.95,0.04,Malta
+2017,0.91,0.83,0.09,Malta
+2016,0.93,0.86,0.07,Malta
+2015,0.89,0.91,0.11,Malta
+2023,0.88,0.61,0.12,Marshall Islands
+2022,0.81,0.54,0.19,Marshall Islands
+2021,0.85,0.58,0.15,Marshall Islands
+2020,0.89,0.68,0.11,Marshall Islands
+2019,0.85,0.64,0.15,Marshall Islands
+2018,0.83,0.61,0.17,Marshall Islands
+2017,0.83,0.62,0.17,Marshall Islands
+2016,0.75,0.49,0.25,Marshall Islands
+2015,0.75,0.7,0.25,Marshall Islands
+2023,0.92,0.24,0.08,Mauritania
+2022,0.84,NA,0.16,Mauritania
+2021,0.75,NA,0.25,Mauritania
+2020,0.82,NA,0.18,Mauritania
+2019,0.75,NA,0.25,Mauritania
+2018,0.78,NA,0.22,Mauritania
+2017,0.75,NA,0.25,Mauritania
+2016,0.73,NA,0.27,Mauritania
+2015,0.7,NA,0.3,Mauritania
+2023,0.96,0.94,0.04,Mauritius
+2022,0.98,0.93,0.02,Mauritius
+2021,0.87,0.83,0.13,Mauritius
+2020,0.89,0.87,0.11,Mauritius
+2019,0.99,0.99,0.01,Mauritius
+2018,0.99,0.99,0.01,Mauritius
+2017,0.89,0.95,0.11,Mauritius
+2016,0.92,0.92,0.08,Mauritius
+2015,0.99,0.96,0.01,Mauritius
+2023,0.76,0.74,0.24,Mexico
+2022,0.86,0.82,0.14,Mexico
+2021,0.99,0.97,0.01,Mexico
+2020,0.92,0.79,0.08,Mexico
+2019,0.73,0.55,0.27,Mexico
+2018,0.97,0.99,0.03,Mexico
+2017,0.76,0.62,0.24,Mexico
+2016,0.96,0.98,0.04,Mexico
+2015,0.97,0.96,0.03,Mexico
+2023,0.86,0.59,0.14,Micronesia (Federated States of)
+2022,0.69,0.38,0.31,Micronesia (Federated States of)
+2021,0.64,0.38,0.36,Micronesia (Federated States of)
+2020,0.79,0.62,0.21,Micronesia (Federated States of)
+2019,0.78,0.52,0.22,Micronesia (Federated States of)
+2018,0.73,0.48,0.27,Micronesia (Federated States of)
+2017,0.76,0.52,0.24,Micronesia (Federated States of)
+2016,0.7,0.45,0.3,Micronesia (Federated States of)
+2015,0.74,0.74,0.26,Micronesia (Federated States of)
+2023,0.88,0.8,0.12,Monaco
+2022,0.88,0.8,0.12,Monaco
+2021,0.88,0.8,0.12,Monaco
+2020,0.88,0.8,0.12,Monaco
+2019,0.88,0.79,0.12,Monaco
+2018,0.88,0.79,0.12,Monaco
+2017,0.88,0.79,0.12,Monaco
+2016,0.89,0.79,0.11,Monaco
+2015,0.89,0.79,0.11,Monaco
+2023,0.96,0.96,0.04,Mongolia
+2022,0.94,0.93,0.06,Mongolia
+2021,0.95,0.94,0.05,Mongolia
+2020,0.97,0.96,0.03,Mongolia
+2019,0.98,0.98,0.02,Mongolia
+2018,0.99,0.98,0.01,Mongolia
+2017,0.99,0.98,0.01,Mongolia
+2016,0.98,0.9,0.02,Mongolia
+2015,0.98,0.98,0.02,Mongolia
+2023,0.24,0.69,0.76,Montenegro
+2022,0.33,0.7,0.67,Montenegro
+2021,0.18,0.79,0.82,Montenegro
+2020,0.24,0.76,0.76,Montenegro
+2019,0.33,0.81,0.67,Montenegro
+2018,0.42,0.86,0.58,Montenegro
+2017,0.58,0.83,0.42,Montenegro
+2016,0.47,0.86,0.53,Montenegro
+2015,0.64,0.94,0.36,Montenegro
+2023,0.99,0.99,0.01,Morocco
+2022,0.99,0.99,0.01,Morocco
+2021,0.99,0.99,0.01,Morocco
+2020,0.99,0.99,0.01,Morocco
+2019,0.99,0.99,0.01,Morocco
+2018,0.99,0.99,0.01,Morocco
+2017,0.99,0.99,0.01,Morocco
+2016,0.99,0.99,0.01,Morocco
+2015,0.99,0.95,0.01,Morocco
+2023,0.65,0.44,0.35,Mozambique
+2022,0.63,0.38,0.37,Mozambique
+2021,0.62,0.38,0.38,Mozambique
+2020,0.73,0.47,0.27,Mozambique
+2019,0.83,0.55,0.17,Mozambique
+2018,0.83,0.48,0.17,Mozambique
+2017,0.83,0.43,0.17,Mozambique
+2016,0.83,0.39,0.17,Mozambique
+2015,0.83,NA,0.17,Mozambique
+2023,0.74,0.65,0.26,Myanmar
+2022,0.75,0.64,0.25,Myanmar
+2021,0.44,0.42,0.56,Myanmar
+2020,0.91,0.9,0.09,Myanmar
+2019,0.84,0.8,0.16,Myanmar
+2018,0.93,0.87,0.07,Myanmar
+2017,0.83,0.8,0.17,Myanmar
+2016,0.91,0.86,0.09,Myanmar
+2015,0.84,0.78,0.16,Myanmar
+2023,0.86,0.62,0.14,Namibia
+2022,0.89,0.79,0.11,Namibia
+2021,0.91,0.56,0.09,Namibia
+2020,0.9,0.63,0.1,Namibia
+2019,0.8,0.56,0.2,Namibia
+2018,0.82,0.5,0.18,Namibia
+2017,0.8,0.32,0.2,Namibia
+2016,0.75,NA,0.25,Namibia
+2015,0.85,NA,0.15,Namibia
+2023,0.98,0.99,0.02,Nauru
+2022,0.98,0.99,0.02,Nauru
+2021,0.98,0.99,0.02,Nauru
+2020,0.98,0.97,0.02,Nauru
+2019,0.95,0.95,0.05,Nauru
+2018,0.99,0.94,0.01,Nauru
+2017,0.95,0.94,0.05,Nauru
+2016,0.98,0.97,0.02,Nauru
+2015,0.98,0.96,0.02,Nauru
+2023,0.93,0.89,0.07,Nepal
+2022,0.9,0.87,0.1,Nepal
+2021,0.9,0.87,0.1,Nepal
+2020,0.87,0.74,0.13,Nepal
+2019,0.92,0.76,0.08,Nepal
+2018,0.91,0.69,0.09,Nepal
+2017,0.9,0.59,0.1,Nepal
+2016,0.83,0.25,0.17,Nepal
+2015,0.85,NA,0.15,Nepal
+2023,0.89,0.81,0.11,Netherlands (Kingdom of the)
+2022,0.89,0.85,0.11,Netherlands (Kingdom of the)
+2021,0.93,0.9,0.07,Netherlands (Kingdom of the)
+2020,0.94,0.89,0.06,Netherlands (Kingdom of the)
+2019,0.94,0.9,0.06,Netherlands (Kingdom of the)
+2018,0.93,0.89,0.07,Netherlands (Kingdom of the)
+2017,0.93,0.9,0.07,Netherlands (Kingdom of the)
+2016,0.94,0.91,0.06,Netherlands (Kingdom of the)
+2015,0.95,0.92,0.05,Netherlands (Kingdom of the)
+2023,0.89,0.84,0.11,New Zealand
+2022,0.9,0.83,0.1,New Zealand
+2021,0.91,0.82,0.09,New Zealand
+2020,0.91,0.91,0.09,New Zealand
+2019,0.92,0.9,0.08,New Zealand
+2018,0.92,0.9,0.08,New Zealand
+2017,0.93,0.9,0.07,New Zealand
+2016,0.92,0.89,0.08,New Zealand
+2015,0.93,0.87,0.07,New Zealand
+2023,0.85,0.95,0.15,Nicaragua
+2022,0.93,0.99,0.07,Nicaragua
+2021,0.83,0.83,0.17,Nicaragua
+2020,0.97,0.98,0.03,Nicaragua
+2019,0.99,0.99,0.01,Nicaragua
+2018,0.99,0.95,0.01,Nicaragua
+2017,0.99,0.84,0.01,Nicaragua
+2016,0.99,NA,0.01,Nicaragua
+2015,0.99,NA,0.01,Nicaragua
+2023,0.8,0.68,0.2,Niger
+2022,0.65,0.42,0.35,Niger
+2021,0.8,0.66,0.2,Niger
+2020,0.79,0.6,0.21,Niger
+2019,0.79,0.58,0.21,Niger
+2018,0.77,0.48,0.23,Niger
+2017,0.82,0.46,0.18,Niger
+2016,0.76,0.31,0.24,Niger
+2015,0.85,0.16,0.15,Niger
+2023,0.6,0.38,0.4,Nigeria
+2022,0.6,0.38,0.4,Nigeria
+2021,0.6,0.38,0.4,Nigeria
+2020,0.6,0.38,0.4,Nigeria
+2019,0.58,0.09,0.42,Nigeria
+2018,0.56,NA,0.44,Nigeria
+2017,0.54,NA,0.46,Nigeria
+2016,0.48,NA,0.52,Nigeria
+2015,0.42,NA,0.58,Nigeria
+2023,0.99,0.99,0.01,Niue
+2022,0.99,0.99,0.01,Niue
+2021,0.99,0.99,0.01,Niue
+2020,0.99,0.99,0.01,Niue
+2019,0.99,0.99,0.01,Niue
+2018,0.99,0.99,0.01,Niue
+2017,0.99,0.99,0.01,Niue
+2016,0.99,0.99,0.01,Niue
+2015,0.99,0.99,0.01,Niue
+2023,0.73,0.88,0.27,North Macedonia
+2022,0.71,0.89,0.29,North Macedonia
+2021,0.7,0.8,0.3,North Macedonia
+2020,0.63,0.68,0.37,North Macedonia
+2019,0.75,0.94,0.25,North Macedonia
+2018,0.75,0.94,0.25,North Macedonia
+2017,0.83,0.97,0.17,North Macedonia
+2016,0.82,0.93,0.18,North Macedonia
+2015,0.89,0.93,0.11,North Macedonia
+2023,0.96,0.94,0.04,Norway
+2022,0.96,0.94,0.04,Norway
+2021,0.97,0.95,0.03,Norway
+2020,0.97,0.95,0.03,Norway
+2019,0.97,0.95,0.03,Norway
+2018,0.96,0.93,0.04,Norway
+2017,0.96,0.91,0.04,Norway
+2016,0.96,0.91,0.04,Norway
+2015,0.95,0.91,0.05,Norway
+2023,0.99,0.99,0.01,Oman
+2022,0.97,0.98,0.03,Oman
+2021,0.99,0.99,0.01,Oman
+2020,0.99,0.99,0.01,Oman
+2019,0.99,0.99,0.01,Oman
+2018,0.99,0.99,0.01,Oman
+2017,0.99,0.99,0.01,Oman
+2016,0.99,0.99,0.01,Oman
+2015,0.99,0.98,0.01,Oman
+2023,0.84,0.8,0.16,Pakistan
+2022,0.82,0.79,0.18,Pakistan
+2021,0.81,0.79,0.19,Pakistan
+2020,0.83,0.77,0.17,Pakistan
+2019,0.81,0.74,0.19,Pakistan
+2018,0.79,0.67,0.21,Pakistan
+2017,0.76,0.67,0.24,Pakistan
+2016,0.75,0.67,0.25,Pakistan
+2015,0.75,0.54,0.25,Pakistan
+2023,0.96,0.89,0.04,Palau
+2022,0.96,0.85,0.04,Palau
+2021,0.93,0.84,0.07,Palau
+2020,0.93,0.83,0.07,Palau
+2019,0.97,0.88,0.03,Palau
+2018,0.9,0.75,0.1,Palau
+2017,0.93,0.77,0.07,Palau
+2016,0.96,0.95,0.04,Palau
+2015,0.95,0.82,0.05,Palau
+2023,0.78,0.73,0.22,Panama
+2022,0.87,0.75,0.13,Panama
+2021,0.92,0.75,0.08,Panama
+2020,0.8,0.74,0.2,Panama
+2019,0.97,0.97,0.03,Panama
+2018,0.98,0.99,0.02,Panama
+2017,0.98,0.93,0.02,Panama
+2016,0.95,0.93,0.05,Panama
+2015,0.93,0.92,0.07,Panama
+2023,0.52,0.41,0.48,Papua New Guinea
+2022,0.41,0.25,0.59,Papua New Guinea
+2021,0.35,0.2,0.65,Papua New Guinea
+2020,0.44,0.27,0.56,Papua New Guinea
+2019,0.37,0.2,0.63,Papua New Guinea
+2018,0.37,NA,0.63,Papua New Guinea
+2017,0.41,NA,0.59,Papua New Guinea
+2016,0.46,NA,0.54,Papua New Guinea
+2015,0.57,NA,0.43,Papua New Guinea
+2023,0.83,0.57,0.17,Paraguay
+2022,0.54,0.53,0.46,Paraguay
+2021,0.68,0.67,0.32,Paraguay
+2020,0.8,0.72,0.2,Paraguay
+2019,0.87,0.83,0.13,Paraguay
+2018,0.93,0.83,0.07,Paraguay
+2017,0.92,0.82,0.08,Paraguay
+2016,0.85,0.87,0.15,Paraguay
+2015,0.78,0.72,0.22,Paraguay
+2023,0.84,0.66,0.16,Peru
+2022,0.74,0.54,0.26,Peru
+2021,0.78,0.6,0.22,Peru
+2020,0.77,0.52,0.23,Peru
+2019,0.85,0.66,0.15,Peru
+2018,0.86,0.67,0.14,Peru
+2017,0.88,0.67,0.12,Peru
+2016,0.89,0.68,0.11,Peru
+2015,0.92,0.63,0.08,Peru
+2023,0.81,0.69,0.19,Philippines
+2022,0.76,0.64,0.24,Philippines
+2021,0.64,0.55,0.36,Philippines
+2020,0.79,0.68,0.21,Philippines
+2019,0.83,0.7,0.17,Philippines
+2018,0.82,0.65,0.18,Philippines
+2017,0.81,0.64,0.19,Philippines
+2016,0.8,0.62,0.2,Philippines
+2015,0.8,0.57,0.2,Philippines
+2023,0.91,0.86,0.09,Poland
+2022,0.91,0.86,0.09,Poland
+2021,0.91,0.86,0.09,Poland
+2020,0.92,0.86,0.08,Poland
+2019,0.93,0.91,0.07,Poland
+2018,0.93,0.92,0.07,Poland
+2017,0.94,0.93,0.06,Poland
+2016,0.96,0.93,0.04,Poland
+2015,0.96,0.94,0.04,Poland
+2023,0.98,0.95,0.02,Portugal
+2022,0.98,0.96,0.02,Portugal
+2021,0.98,0.95,0.02,Portugal
+2020,0.99,0.95,0.01,Portugal
+2019,0.99,0.96,0.01,Portugal
+2018,0.99,0.96,0.01,Portugal
+2017,0.98,0.95,0.02,Portugal
+2016,0.98,0.95,0.02,Portugal
+2015,0.98,0.95,0.02,Portugal
+2023,0.99,0.99,0.01,Qatar
+2022,0.99,0.99,0.01,Qatar
+2021,0.99,0.99,0.01,Qatar
+2020,0.9,0.88,0.1,Qatar
+2019,0.99,0.98,0.01,Qatar
+2018,0.99,0.95,0.01,Qatar
+2017,0.99,0.93,0.01,Qatar
+2016,0.99,0.92,0.01,Qatar
+2015,0.99,0.91,0.01,Qatar
+2023,0.97,0.96,0.03,Republic of Korea
+2022,0.97,0.95,0.03,Republic of Korea
+2021,0.98,0.95,0.02,Republic of Korea
+2020,0.98,0.95,0.02,Republic of Korea
+2019,0.98,0.96,0.02,Republic of Korea
+2018,0.98,0.97,0.02,Republic of Korea
+2017,0.97,0.97,0.03,Republic of Korea
+2016,0.98,0.97,0.02,Republic of Korea
+2015,0.98,0.97,0.02,Republic of Korea
+2023,0.85,0.93,0.15,Republic of Moldova
+2022,0.84,0.93,0.16,Republic of Moldova
+2021,0.83,0.92,0.17,Republic of Moldova
+2020,0.84,0.93,0.16,Republic of Moldova
+2019,0.97,0.95,0.03,Republic of Moldova
+2018,0.93,0.96,0.07,Republic of Moldova
+2017,0.93,0.92,0.07,Republic of Moldova
+2016,0.88,0.95,0.12,Republic of Moldova
+2015,0.89,0.9,0.11,Republic of Moldova
+2023,0.78,0.62,0.22,Romania
+2022,0.83,0.71,0.17,Romania
+2021,0.86,0.75,0.14,Romania
+2020,0.87,0.75,0.13,Romania
+2019,0.9,0.76,0.1,Romania
+2018,0.9,0.81,0.1,Romania
+2017,0.86,0.75,0.14,Romania
+2016,0.86,0.76,0.14,Romania
+2015,0.86,0.8,0.14,Romania
+2023,0.97,0.97,0.03,Russian Federation
+2022,0.97,0.97,0.03,Russian Federation
+2021,0.97,0.96,0.03,Russian Federation
+2020,0.97,0.96,0.03,Russian Federation
+2019,0.98,0.97,0.02,Russian Federation
+2018,0.98,0.97,0.02,Russian Federation
+2017,0.98,0.97,0.02,Russian Federation
+2016,0.98,0.97,0.02,Russian Federation
+2015,0.98,0.97,0.02,Russian Federation
+2023,0.96,0.88,0.04,Rwanda
+2022,0.99,0.91,0.01,Rwanda
+2021,0.87,0.85,0.13,Rwanda
+2020,0.94,0.91,0.06,Rwanda
+2019,0.96,0.92,0.04,Rwanda
+2018,0.99,0.96,0.01,Rwanda
+2017,0.97,0.95,0.03,Rwanda
+2016,0.95,0.9,0.05,Rwanda
+2015,0.96,0.87,0.04,Rwanda
+2023,0.95,0.94,0.05,Saint Kitts and Nevis
+2022,0.95,0.93,0.05,Saint Kitts and Nevis
+2021,0.96,0.94,0.04,Saint Kitts and Nevis
+2020,0.95,0.99,0.05,Saint Kitts and Nevis
+2019,0.97,0.98,0.03,Saint Kitts and Nevis
+2018,0.96,0.96,0.04,Saint Kitts and Nevis
+2017,0.93,0.95,0.07,Saint Kitts and Nevis
+2016,0.98,0.96,0.02,Saint Kitts and Nevis
+2015,0.95,0.9,0.05,Saint Kitts and Nevis
+2023,0.85,0.83,0.15,Saint Lucia
+2022,0.81,0.63,0.19,Saint Lucia
+2021,0.77,0.66,0.23,Saint Lucia
+2020,0.89,0.71,0.11,Saint Lucia
+2019,0.96,0.75,0.04,Saint Lucia
+2018,0.86,0.68,0.14,Saint Lucia
+2017,0.87,0.73,0.13,Saint Lucia
+2016,0.99,0.88,0.01,Saint Lucia
+2015,0.97,0.95,0.03,Saint Lucia
+2023,0.9,0.92,0.1,Saint Vincent and the Grenadines
+2022,0.99,0.99,0.01,Saint Vincent and the Grenadines
+2021,0.96,0.94,0.04,Saint Vincent and the Grenadines
+2020,0.99,0.99,0.01,Saint Vincent and the Grenadines
+2019,0.99,0.99,0.01,Saint Vincent and the Grenadines
+2018,0.99,0.99,0.01,Saint Vincent and the Grenadines
+2017,0.99,0.99,0.01,Saint Vincent and the Grenadines
+2016,0.99,0.99,0.01,Saint Vincent and the Grenadines
+2015,0.99,0.99,0.01,Saint Vincent and the Grenadines
+2023,0.87,0.75,0.13,Samoa
+2022,0.82,0.45,0.18,Samoa
+2021,0.62,0.5,0.38,Samoa
+2020,0.66,0.59,0.34,Samoa
+2019,0.96,0.59,0.04,Samoa
+2018,0.4,0.28,0.6,Samoa
+2017,0.67,0.54,0.33,Samoa
+2016,0.75,0.54,0.25,Samoa
+2015,0.75,0.55,0.25,Samoa
+2023,0.89,0.79,0.11,San Marino
+2022,0.91,0.85,0.09,San Marino
+2021,0.89,0.81,0.11,San Marino
+2020,0.9,0.79,0.1,San Marino
+2019,0.86,0.79,0.14,San Marino
+2018,0.89,0.84,0.11,San Marino
+2017,0.86,0.78,0.14,San Marino
+2016,0.82,0.81,0.18,San Marino
+2015,0.84,0.86,0.16,San Marino
+2023,0.86,0.9,0.14,Sao Tome and Principe
+2022,0.82,0.8,0.18,Sao Tome and Principe
+2021,0.77,0.69,0.23,Sao Tome and Principe
+2020,0.86,0.75,0.14,Sao Tome and Principe
+2019,0.95,0.81,0.05,Sao Tome and Principe
+2018,0.95,0.76,0.05,Sao Tome and Principe
+2017,0.9,0.76,0.1,Sao Tome and Principe
+2016,0.93,0.76,0.07,Sao Tome and Principe
+2015,0.93,0.76,0.07,Sao Tome and Principe
+2023,0.97,0.96,0.03,Saudi Arabia
+2022,0.98,0.98,0.02,Saudi Arabia
+2021,0.98,0.97,0.02,Saudi Arabia
+2020,0.96,0.96,0.04,Saudi Arabia
+2019,0.95,0.96,0.05,Saudi Arabia
+2018,0.98,0.97,0.02,Saudi Arabia
+2017,0.96,0.96,0.04,Saudi Arabia
+2016,0.98,0.96,0.02,Saudi Arabia
+2015,0.98,0.96,0.02,Saudi Arabia
+2023,0.76,0.64,0.24,Senegal
+2022,0.76,0.64,0.24,Senegal
+2021,0.76,0.64,0.24,Senegal
+2020,0.8,0.63,0.2,Senegal
+2019,0.86,0.63,0.14,Senegal
+2018,0.86,0.62,0.14,Senegal
+2017,0.9,0.59,0.1,Senegal
+2016,0.93,0.57,0.07,Senegal
+2015,0.8,0.54,0.2,Senegal
+2023,0.84,0.91,0.16,Serbia
+2022,0.81,0.89,0.19,Serbia
+2021,0.75,0.86,0.25,Serbia
+2020,0.78,0.84,0.22,Serbia
+2019,0.87,0.91,0.13,Serbia
+2018,0.92,0.9,0.08,Serbia
+2017,0.86,0.91,0.14,Serbia
+2016,0.82,0.9,0.18,Serbia
+2015,0.86,0.86,0.14,Serbia
+2023,0.93,0.89,0.07,Seychelles
+2022,0.98,0.98,0.02,Seychelles
+2021,0.94,0.86,0.06,Seychelles
+2020,0.97,0.99,0.03,Seychelles
+2019,0.99,0.99,0.01,Seychelles
+2018,0.96,0.97,0.04,Seychelles
+2017,0.99,0.99,0.01,Seychelles
+2016,0.97,0.99,0.03,Seychelles
+2015,0.98,0.98,0.02,Seychelles
+2023,0.9,0.73,0.1,Sierra Leone
+2022,0.9,0.73,0.1,Sierra Leone
+2021,0.87,0.67,0.13,Sierra Leone
+2020,0.87,0.67,0.13,Sierra Leone
+2019,0.93,0.72,0.07,Sierra Leone
+2018,0.87,0.64,0.13,Sierra Leone
+2017,0.8,0.55,0.2,Sierra Leone
+2016,0.85,0.5,0.15,Sierra Leone
+2015,0.78,0.6,0.22,Sierra Leone
+2023,0.97,0.92,0.03,Singapore
+2022,0.96,0.92,0.04,Singapore
+2021,0.96,0.93,0.04,Singapore
+2020,0.97,0.94,0.03,Singapore
+2019,0.96,0.92,0.04,Singapore
+2018,0.97,0.91,0.03,Singapore
+2017,0.95,0.9,0.05,Singapore
+2016,0.95,0.88,0.05,Singapore
+2015,0.95,0.9,0.05,Singapore
+2023,0.94,0.95,0.06,Slovakia
+2022,0.95,0.96,0.05,Slovakia
+2021,0.95,0.96,0.05,Slovakia
+2020,0.96,0.98,0.04,Slovakia
+2019,0.96,0.98,0.04,Slovakia
+2018,0.96,0.97,0.04,Slovakia
+2017,0.96,0.97,0.04,Slovakia
+2016,0.95,0.97,0.05,Slovakia
+2015,0.95,0.98,0.05,Slovakia
+2023,0.95,0.89,0.05,Slovenia
+2022,0.96,0.92,0.04,Slovenia
+2021,0.95,0.91,0.05,Slovenia
+2020,0.94,0.91,0.06,Slovenia
+2019,0.94,0.94,0.06,Slovenia
+2018,0.93,0.94,0.07,Slovenia
+2017,0.93,0.94,0.07,Slovenia
+2016,0.92,0.93,0.08,Slovenia
+2015,0.94,0.96,0.06,Slovenia
+2023,0.68,0.48,0.32,Solomon Islands
+2022,0.9,0.9,0.1,Solomon Islands
+2021,0.67,0.4,0.33,Solomon Islands
+2020,0.81,0.51,0.19,Solomon Islands
+2019,0.81,0.54,0.19,Solomon Islands
+2018,0.93,0.54,0.07,Solomon Islands
+2017,0.84,NA,0.16,Solomon Islands
+2016,0.82,NA,0.18,Solomon Islands
+2015,0.75,NA,0.25,Solomon Islands
+2023,0.46,0.13,0.54,Somalia
+2022,0.46,0.08,0.54,Somalia
+2021,0.46,0.04,0.54,Somalia
+2020,0.46,NA,0.54,Somalia
+2019,0.46,NA,0.54,Somalia
+2018,0.46,NA,0.54,Somalia
+2017,0.46,NA,0.54,Somalia
+2016,0.46,NA,0.54,Somalia
+2015,0.46,NA,0.54,Somalia
+2023,0.8,0.84,0.2,South Africa
+2022,0.86,0.87,0.14,South Africa
+2021,0.87,0.82,0.13,South Africa
+2020,0.84,0.76,0.16,South Africa
+2019,0.83,0.79,0.17,South Africa
+2018,0.81,0.75,0.19,South Africa
+2017,0.81,0.78,0.19,South Africa
+2016,0.84,0.69,0.16,South Africa
+2015,0.86,0.59,0.14,South Africa
+2023,0.72,NA,0.28,South Sudan
+2022,0.72,NA,0.28,South Sudan
+2021,0.74,NA,0.26,South Sudan
+2020,0.69,NA,0.31,South Sudan
+2019,0.65,NA,0.35,South Sudan
+2018,0.61,NA,0.39,South Sudan
+2017,0.56,NA,0.44,South Sudan
+2016,0.51,NA,0.49,South Sudan
+2015,0.52,NA,0.48,South Sudan
+2023,0.96,0.92,0.04,Spain
+2022,0.96,0.92,0.04,Spain
+2021,0.95,0.91,0.05,Spain
+2020,0.96,0.94,0.04,Spain
+2019,0.98,0.94,0.02,Spain
+2018,0.98,0.94,0.02,Spain
+2017,0.98,0.93,0.02,Spain
+2016,0.97,0.95,0.03,Spain
+2015,0.96,0.94,0.04,Spain
+2023,0.99,0.99,0.01,Sri Lanka
+2022,0.99,0.98,0.01,Sri Lanka
+2021,0.97,0.97,0.03,Sri Lanka
+2020,0.96,0.96,0.04,Sri Lanka
+2019,0.99,0.99,0.01,Sri Lanka
+2018,0.99,0.99,0.01,Sri Lanka
+2017,0.99,0.99,0.01,Sri Lanka
+2016,0.99,0.99,0.01,Sri Lanka
+2015,0.99,0.99,0.01,Sri Lanka
+2023,0.89,0.89,0.11,State of Palestine
+2022,0.97,0.93,0.03,State of Palestine
+2021,0.98,0.99,0.02,State of Palestine
+2020,0.99,0.99,0.01,State of Palestine
+2019,0.99,0.99,0.01,State of Palestine
+2018,0.99,0.99,0.01,State of Palestine
+2017,0.99,0.99,0.01,State of Palestine
+2016,0.99,0.99,0.01,State of Palestine
+2015,0.99,0.99,0.01,State of Palestine
+2023,0.51,0.38,0.49,Sudan
+2022,0.66,0.51,0.34,Sudan
+2021,0.81,0.63,0.19,Sudan
+2020,0.86,0.68,0.14,Sudan
+2019,0.9,0.74,0.1,Sudan
+2018,0.88,0.72,0.12,Sudan
+2017,0.9,0.72,0.1,Sudan
+2016,0.86,0.69,0.14,Sudan
+2015,0.87,0.69,0.13,Sudan
+2023,0.71,0.52,0.29,Suriname
+2022,0.74,0.51,0.26,Suriname
+2021,0.58,0.43,0.42,Suriname
+2020,0.45,0.24,0.55,Suriname
+2019,0.64,0.32,0.36,Suriname
+2018,0.77,0.31,0.23,Suriname
+2017,0.76,0.32,0.24,Suriname
+2016,0.76,0.34,0.24,Suriname
+2015,0.76,0.21,0.24,Suriname
+2023,0.93,0.92,0.07,Sweden
+2022,0.92,0.91,0.08,Sweden
+2021,0.97,0.91,0.03,Sweden
+2020,0.97,0.92,0.03,Sweden
+2019,0.97,0.93,0.03,Sweden
+2018,0.97,0.94,0.03,Sweden
+2017,0.97,0.95,0.03,Sweden
+2016,0.97,0.95,0.03,Sweden
+2015,0.98,0.95,0.02,Sweden
+2023,0.95,0.91,0.05,Switzerland
+2022,0.96,0.94,0.04,Switzerland
+2021,0.95,0.94,0.05,Switzerland
+2020,0.97,0.93,0.03,Switzerland
+2019,0.95,0.9,0.05,Switzerland
+2018,0.95,0.9,0.05,Switzerland
+2017,0.95,0.9,0.05,Switzerland
+2016,0.94,0.87,0.06,Switzerland
+2015,0.94,0.87,0.06,Switzerland
+2023,0.74,0.64,0.26,Syrian Arab Republic
+2022,0.52,0.49,0.48,Syrian Arab Republic
+2021,0.7,0.64,0.3,Syrian Arab Republic
+2020,0.7,0.64,0.3,Syrian Arab Republic
+2019,0.76,0.65,0.24,Syrian Arab Republic
+2018,0.74,0.65,0.26,Syrian Arab Republic
+2017,0.78,0.7,0.22,Syrian Arab Republic
+2016,0.73,0.63,0.27,Syrian Arab Republic
+2015,0.64,0.58,0.36,Syrian Arab Republic
+2023,0.98,0.96,0.02,Tajikistan
+2022,0.98,0.97,0.02,Tajikistan
+2021,0.97,0.96,0.03,Tajikistan
+2020,0.98,0.97,0.02,Tajikistan
+2019,0.98,0.97,0.02,Tajikistan
+2018,0.98,0.97,0.02,Tajikistan
+2017,0.98,0.98,0.02,Tajikistan
+2016,0.97,0.97,0.03,Tajikistan
+2015,0.97,0.94,0.03,Tajikistan
+2023,0.93,0.87,0.07,Thailand
+2022,0.93,0.87,0.07,Thailand
+2021,0.93,0.87,0.07,Thailand
+2020,0.96,0.87,0.04,Thailand
+2019,0.96,0.87,0.04,Thailand
+2018,0.96,0.87,0.04,Thailand
+2017,0.99,0.95,0.01,Thailand
+2016,0.99,0.95,0.01,Thailand
+2015,0.99,0.95,0.01,Thailand
+2023,0.72,0.72,0.28,Timor-Leste
+2022,0.72,0.72,0.28,Timor-Leste
+2021,0.72,0.72,0.28,Timor-Leste
+2020,0.74,0.72,0.26,Timor-Leste
+2019,0.75,0.74,0.25,Timor-Leste
+2018,0.77,0.74,0.23,Timor-Leste
+2017,0.77,0.74,0.23,Timor-Leste
+2016,0.73,0.3,0.27,Timor-Leste
+2015,0.7,NA,0.3,Timor-Leste
+2023,0.72,0.58,0.28,Togo
+2022,0.71,0.57,0.29,Togo
+2021,0.7,0.5,0.3,Togo
+2020,0.69,0.46,0.31,Togo
+2019,0.75,0.53,0.25,Togo
+2018,0.71,NA,0.29,Togo
+2017,0.77,NA,0.23,Togo
+2016,0.73,NA,0.27,Togo
+2015,0.75,NA,0.25,Togo
+2023,0.99,0.99,0.01,Tonga
+2022,0.99,0.99,0.01,Tonga
+2021,0.99,0.99,0.01,Tonga
+2020,0.99,0.99,0.01,Tonga
+2019,0.99,0.99,0.01,Tonga
+2018,0.99,0.99,0.01,Tonga
+2017,0.99,0.99,0.01,Tonga
+2016,0.98,0.99,0.02,Tonga
+2015,0.99,0.99,0.01,Tonga
+2023,0.9,0.91,0.1,Trinidad and Tobago
+2022,0.92,0.92,0.08,Trinidad and Tobago
+2021,0.93,0.88,0.07,Trinidad and Tobago
+2020,0.91,0.9,0.09,Trinidad and Tobago
+2019,0.99,0.92,0.01,Trinidad and Tobago
+2018,0.9,0.92,0.1,Trinidad and Tobago
+2017,0.93,0.9,0.07,Trinidad and Tobago
+2016,0.86,0.65,0.14,Trinidad and Tobago
+2015,0.89,0.79,0.11,Trinidad and Tobago
+2023,0.96,0.97,0.04,Tunisia
+2022,0.95,0.98,0.05,Tunisia
+2021,0.95,0.98,0.05,Tunisia
+2020,0.98,0.96,0.02,Tunisia
+2019,0.98,0.97,0.02,Tunisia
+2018,0.96,0.99,0.04,Tunisia
+2017,0.98,0.97,0.02,Tunisia
+2016,0.96,0.97,0.04,Tunisia
+2015,0.98,0.98,0.02,Tunisia
+2023,0.95,0.94,0.05,Turkiye
+2022,0.95,0.94,0.05,Turkiye
+2021,0.96,0.93,0.04,Turkiye
+2020,0.95,0.93,0.05,Turkiye
+2019,0.97,0.88,0.03,Turkiye
+2018,0.96,0.87,0.04,Turkiye
+2017,0.96,0.86,0.04,Turkiye
+2016,0.98,0.85,0.02,Turkiye
+2015,0.97,0.86,0.03,Turkiye
+2023,0.99,0.99,0.01,Turkmenistan
+2022,0.98,0.99,0.02,Turkmenistan
+2021,0.97,0.98,0.03,Turkmenistan
+2020,0.98,0.99,0.02,Turkmenistan
+2019,0.99,0.99,0.01,Turkmenistan
+2018,0.99,0.99,0.01,Turkmenistan
+2017,0.99,0.99,0.01,Turkmenistan
+2016,0.99,0.99,0.01,Turkmenistan
+2015,0.99,0.99,0.01,Turkmenistan
+2023,0.98,0.98,0.02,Tuvalu
+2022,0.9,0.89,0.1,Tuvalu
+2021,0.93,0.84,0.07,Tuvalu
+2020,0.93,0.85,0.07,Tuvalu
+2019,0.96,0.92,0.04,Tuvalu
+2018,0.88,0.81,0.12,Tuvalu
+2017,0.95,0.94,0.05,Tuvalu
+2016,0.96,0.92,0.04,Tuvalu
+2015,0.94,0.86,0.06,Tuvalu
+2023,0.93,0.21,0.07,Uganda
+2022,0.92,0.49,0.08,Uganda
+2021,0.9,NA,0.1,Uganda
+2020,0.89,NA,0.11,Uganda
+2019,0.87,NA,0.13,Uganda
+2018,0.86,NA,0.14,Uganda
+2017,0.83,NA,0.17,Uganda
+2016,0.79,NA,0.21,Uganda
+2015,0.79,NA,0.21,Uganda
+2023,0.92,0.87,0.08,Ukraine
+2022,0.74,0.69,0.26,Ukraine
+2021,0.88,0.86,0.12,Ukraine
+2020,0.85,0.82,0.15,Ukraine
+2019,0.93,0.92,0.07,Ukraine
+2018,0.91,0.9,0.09,Ukraine
+2017,0.86,0.84,0.14,Ukraine
+2016,0.42,0.31,0.58,Ukraine
+2015,0.56,0.57,0.44,Ukraine
+2023,0.98,0.94,0.02,United Arab Emirates
+2022,0.98,0.91,0.02,United Arab Emirates
+2021,0.99,0.96,0.01,United Arab Emirates
+2020,0.99,0.92,0.01,United Arab Emirates
+2019,0.99,0.94,0.01,United Arab Emirates
+2018,0.99,0.95,0.01,United Arab Emirates
+2017,0.99,0.97,0.01,United Arab Emirates
+2016,0.99,0.98,0.01,United Arab Emirates
+2015,0.99,0.99,0.01,United Arab Emirates
+2023,0.9,0.85,0.1,United Kingdom
+2022,0.9,0.87,0.1,United Kingdom
+2021,0.91,0.87,0.09,United Kingdom
+2020,0.91,0.87,0.09,United Kingdom
+2019,0.91,0.87,0.09,United Kingdom
+2018,0.92,0.88,0.08,United Kingdom
+2017,0.92,0.88,0.08,United Kingdom
+2016,0.92,0.89,0.08,United Kingdom
+2015,0.93,0.89,0.07,United Kingdom
+2023,0.91,0.78,0.09,United Republic of Tanzania
+2022,0.89,0.73,0.11,United Republic of Tanzania
+2021,0.8,0.6,0.2,United Republic of Tanzania
+2020,0.87,0.64,0.13,United Republic of Tanzania
+2019,0.89,0.7,0.11,United Republic of Tanzania
+2018,0.88,0.68,0.12,United Republic of Tanzania
+2017,0.9,0.67,0.1,United Republic of Tanzania
+2016,0.83,0.63,0.17,United Republic of Tanzania
+2015,0.95,0.53,0.05,United Republic of Tanzania
+2023,0.92,0.95,0.08,United States
+2022,0.92,0.95,0.08,United States
+2021,0.92,0.95,0.08,United States
+2020,0.91,0.95,0.09,United States
+2019,0.9,0.95,0.1,United States
+2018,0.92,0.94,0.08,United States
+2017,0.91,0.94,0.09,United States
+2016,0.92,0.94,0.08,United States
+2015,0.92,0.93,0.08,United States
+2023,0.96,0.9,0.04,Uruguay
+2022,0.96,0.92,0.04,Uruguay
+2021,0.93,0.82,0.07,Uruguay
+2020,0.95,0.91,0.05,Uruguay
+2019,0.96,0.99,0.04,Uruguay
+2018,0.97,0.91,0.03,Uruguay
+2017,0.96,0.92,0.04,Uruguay
+2016,0.95,0.92,0.05,Uruguay
+2015,0.96,0.93,0.04,Uruguay
+2023,0.99,0.99,0.01,Uzbekistan
+2022,0.99,0.99,0.01,Uzbekistan
+2021,0.99,0.99,0.01,Uzbekistan
+2020,0.99,0.99,0.01,Uzbekistan
+2019,0.98,0.99,0.02,Uzbekistan
+2018,0.96,0.99,0.04,Uzbekistan
+2017,0.99,0.99,0.01,Uzbekistan
+2016,0.99,0.99,0.01,Uzbekistan
+2015,0.99,0.99,0.01,Uzbekistan
+2023,0.7,0.21,0.3,Vanuatu
+2022,0.7,NA,0.3,Vanuatu
+2021,0.5,NA,0.5,Vanuatu
+2020,0.78,NA,0.22,Vanuatu
+2019,0.8,NA,0.2,Vanuatu
+2018,0.75,NA,0.25,Vanuatu
+2017,0.8,NA,0.2,Vanuatu
+2016,0.84,NA,0.16,Vanuatu
+2015,0.76,NA,0.24,Vanuatu
+2023,0.68,0.4,0.32,Venezuela (Bolivarian Republic of)
+2022,0.52,0.3,0.48,Venezuela (Bolivarian Republic of)
+2021,0.68,0.37,0.32,Venezuela (Bolivarian Republic of)
+2020,0.76,0.28,0.24,Venezuela (Bolivarian Republic of)
+2019,0.93,0.13,0.07,Venezuela (Bolivarian Republic of)
+2018,0.74,0.39,0.26,Venezuela (Bolivarian Republic of)
+2017,0.96,0.59,0.04,Venezuela (Bolivarian Republic of)
+2016,0.88,0.53,0.12,Venezuela (Bolivarian Republic of)
+2015,0.92,0.52,0.08,Venezuela (Bolivarian Republic of)
+2023,0.82,0.86,0.18,Viet Nam
+2022,0.88,0.81,0.12,Viet Nam
+2021,0.89,0.85,0.11,Viet Nam
+2020,0.97,0.93,0.03,Viet Nam
+2019,0.95,0.92,0.05,Viet Nam
+2018,0.97,0.9,0.03,Viet Nam
+2017,0.97,0.93,0.03,Viet Nam
+2016,0.99,0.95,0.01,Viet Nam
+2015,0.97,0.92,0.03,Viet Nam
+2023,0.45,0.45,0.55,Yemen
+2022,0.53,0.45,0.47,Yemen
+2021,0.51,0.41,0.49,Yemen
+2020,0.53,0.36,0.47,Yemen
+2019,0.54,0.38,0.46,Yemen
+2018,0.53,0.39,0.47,Yemen
+2017,0.56,0.4,0.44,Yemen
+2016,0.62,0.44,0.38,Yemen
+2015,0.61,0.37,0.39,Yemen
+2023,0.9,0.75,0.1,Zambia
+2022,0.9,0.72,0.1,Zambia
+2021,0.9,0.69,0.1,Zambia
+2020,0.96,0.66,0.04,Zambia
+2019,0.93,0.66,0.07,Zambia
+2018,0.94,0.65,0.06,Zambia
+2017,0.96,0.64,0.04,Zambia
+2016,0.97,0.58,0.03,Zambia
+2015,0.9,0.47,0.1,Zambia
+2023,0.9,0.77,0.1,Zimbabwe
+2022,0.9,0.77,0.1,Zimbabwe
+2021,0.88,0.76,0.12,Zimbabwe
+2020,0.85,0.74,0.15,Zimbabwe
+2019,0.85,0.75,0.15,Zimbabwe
+2018,0.88,0.78,0.12,Zimbabwe
+2017,0.9,0.78,0.1,Zimbabwe
+2016,0.95,0.63,0.05,Zimbabwe
+2015,0.86,NA,0.14,Zimbabwe

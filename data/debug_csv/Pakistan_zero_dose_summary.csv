@@ -1,0 +1,17 @@
+"country","year","vaccine","stratum","Flat coverage","Increasing coverage","Flat + catchup campaigns","Increasing + catchup campaigns"
+"Pakistan",2025,"DTP","urban_nonpoor",48.8,34.8,48.8,34.8
+"Pakistan",2025,"DTP","urban_poor",178.1,171,178.1,171
+"Pakistan",2025,"Measles","urban_nonpoor",78.5,66.3,78.5,66.3
+"Pakistan",2025,"Measles","urban_poor",142.1,135.8,142.1,135.8
+"Pakistan",2030,"DTP","urban_nonpoor",55.5,9.7,55.5,9.7
+"Pakistan",2030,"DTP","urban_poor",202.4,176.4,202.4,176.4
+"Pakistan",2030,"Measles","urban_nonpoor",89.2,43.7,89.2,43.7
+"Pakistan",2030,"Measles","urban_poor",161.4,138.4,161.4,138.4
+"Pakistan",2040,"DTP","urban_nonpoor",76.7,13.5,76.7,13.5
+"Pakistan",2040,"DTP","urban_poor",279.7,206,279.7,206
+"Pakistan",2040,"Measles","urban_nonpoor",123.3,9,123.3,9
+"Pakistan",2040,"Measles","urban_poor",223.1,156.5,223.1,156.5
+"Pakistan",2050,"DTP","urban_nonpoor",0,0,0,0
+"Pakistan",2050,"DTP","urban_poor",0,0,0,0
+"Pakistan",2050,"Measles","urban_nonpoor",0,0,0,0
+"Pakistan",2050,"Measles","urban_poor",0,0,0,0

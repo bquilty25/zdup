@@ -1,0 +1,17 @@
+"country","year","vaccine","stratum","Flat coverage","Increasing coverage","Flat + catchup campaigns","Increasing + catchup campaigns"
+"Philippines",2025,"DTP","urban_nonpoor",18.9,21.2,18.9,21.2
+"Philippines",2025,"DTP","urban_poor",94.6,96.2,94.6,96.2
+"Philippines",2025,"Measles","urban_nonpoor",17.7,19.9,17.7,19.9
+"Philippines",2025,"Measles","urban_poor",66.6,68.1,66.6,68.1
+"Philippines",2030,"DTP","urban_nonpoor",20.8,30,20.8,30
+"Philippines",2030,"DTP","urban_poor",103.8,110.2,103.8,110.2
+"Philippines",2030,"Measles","urban_nonpoor",19.4,28.3,19.4,28.3
+"Philippines",2030,"Measles","urban_poor",73.1,79.2,73.1,79.2
+"Philippines",2040,"DTP","urban_nonpoor",25.6,55,25.6,55
+"Philippines",2040,"DTP","urban_poor",128.2,148.7,128.2,148.7
+"Philippines",2040,"Measles","urban_nonpoor",24,52.5,24,52.5
+"Philippines",2040,"Measles","urban_poor",90.3,110.1,90.3,110.1
+"Philippines",2050,"DTP","urban_nonpoor",0,0,0,0
+"Philippines",2050,"DTP","urban_poor",0,0,0,0
+"Philippines",2050,"Measles","urban_nonpoor",0,0,0,0
+"Philippines",2050,"Measles","urban_poor",0,0,0,0

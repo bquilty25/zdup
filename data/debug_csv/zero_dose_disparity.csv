@@ -1,0 +1,293 @@
+country,group,proportion_of_children_percent,zero_dose_percent
+Afghanistan,urban non-poor,0.132,0.14400000000000002
+Afghanistan,urban poor,0.109,0.22399999999999998
+Afghanistan,rural,0.759,0.299
+Algeria,urban non-poor,0.298,0.04
+Algeria,urban poor,0.24600000000000002,0.052000000000000005
+Algeria,rural,0.457,0.045
+Angola,urban non-poor,0.308,0.107
+Angola,urban poor,0.29600000000000004,0.267
+Angola,rural,0.396,0.506
+Armenia,urban non-poor,0.365,0.005
+Armenia,urban poor,0.205,0.032
+Armenia,rural,0.43,0.016
+Bangladesh,urban non-poor,0.156,0.008
+Bangladesh,urban poor,0.11199999999999999,0.026000000000000002
+Bangladesh,rural,0.732,0.015
+Belize,urban non-poor,0.221,0.053
+Belize,urban poor,0.18600000000000003,0.039
+Belize,rural,0.593,0.087
+Benin,urban non-poor,0.22,0.08199999999999999
+Benin,urban poor,0.156,0.174
+Benin,rural,0.625,0.18
+Bosnia and Herzegovina,urban non-poor,0.225,0.008
+Bosnia and Herzegovina,urban poor,0.124,0.055
+Bosnia and Herzegovina,rural,0.6509999999999999,0.033
+Burkina Faso,urban non-poor,0.095,0.03
+Burkina Faso,urban poor,0.085,0.047
+Burkina Faso,rural,0.82,0.06
+Burundi,urban non-poor,0.043,0.003
+Burundi,urban poor,0.039,0.017
+Burundi,rural,0.9179999999999999,0.008
+CAR,urban non-poor,0.172,0.161
+CAR,urban poor,0.138,0.434
+CAR,rural,0.691,0.525
+Cambodia,urban non-poor,0.09699999999999999,0.005
+Cambodia,urban poor,0.051,0.016
+Cambodia,rural,0.852,0.069
+Cameroon,urban non-poor,0.237,0.07
+Cameroon,urban poor,0.19399999999999998,0.11599999999999999
+Cameroon,rural,0.568,0.225
+Chad,urban non-poor,0.10300000000000001,0.24
+Chad,urban poor,0.078,0.36700000000000005
+Chad,rural,0.8190000000000001,0.444
+Colombia,urban non-poor,0.355,0.038
+Colombia,urban poor,0.37200000000000005,0.027000000000000003
+Colombia,rural,0.27399999999999997,0.021
+Comoros,urban non-poor,0.163,0.139
+Comoros,urban poor,0.14,0.2
+Comoros,rural,0.6970000000000001,0.183
+Congo Brazzaville,urban non-poor,0.35100000000000003,0.076
+Congo Brazzaville,urban poor,0.266,0.08
+Congo Brazzaville,rural,0.38299999999999995,0.24100000000000002
+Congo Democratic Republic,urban non-poor,0.222,0.151
+Congo Democratic Republic,urban poor,0.183,0.316
+Congo Democratic Republic,rural,0.596,0.418
+Costa Rica,urban non-poor,0.35,0.008
+Costa Rica,urban poor,0.381,0.03
+Costa Rica,rural,0.26899999999999996,0.033
+Cote dIvoire,urban non-poor,0.205,0.1
+Cote dIvoire,urban poor,0.19399999999999998,0.198
+Cote dIvoire,rural,0.601,0.228
+Cuba,urban non-poor,0.336,0.008
+Cuba,urban poor,0.285,0.048
+Cuba,rural,0.37799999999999995,0.025
+Dominican Republic,urban non-poor,0.40700000000000003,0.067
+Dominican Republic,urban poor,0.355,0.085
+Dominican Republic,rural,0.23800000000000002,0.098
+Egypt,urban non-poor,0.179,0.003
+Egypt,urban poor,0.122,0.002
+Egypt,rural,0.6990000000000001,0.006999999999999999
+El Salvador,urban non-poor,0.29600000000000004,0.021
+El Salvador,urban poor,0.29,0.003
+El Salvador,rural,0.414,0.01
+Eswatini,urban non-poor,0.131,0.028999999999999998
+Eswatini,urban poor,0.091,0.059000000000000004
+Eswatini,rural,0.778,0.032
+Ethiopia,urban non-poor,0.21100000000000002,0.047
+Ethiopia,urban poor,0.094,0.218
+Ethiopia,rural,0.695,0.297
+Fiji,urban non-poor,0.29,0.022000000000000002
+Fiji,urban poor,0.242,0.042
+Fiji,rural,0.467,0.036000000000000004
+Gabon,urban non-poor,0.441,0.091
+Gabon,urban poor,0.391,0.115
+Gabon,rural,0.16899999999999998,0.183
+Gambia,urban non-poor,0.386,0.024
+Gambia,urban poor,0.27699999999999997,0.017
+Gambia,rural,0.33799999999999997,0.008
+Ghana,urban non-poor,0.273,0.035
+Ghana,urban poor,0.16899999999999998,0.040999999999999995
+Ghana,rural,0.5589999999999999,0.043
+Guatemala,urban non-poor,0.177,0.01
+Guatemala,urban poor,0.179,0.023
+Guatemala,rural,0.644,0.028999999999999998
+Guinea,urban non-poor,0.184,0.179
+Guinea,urban poor,0.11599999999999999,0.26899999999999996
+Guinea,rural,0.6990000000000001,0.447
+Guinea Bissau,urban non-poor,0.145,0.084
+Guinea Bissau,urban poor,0.11699999999999999,0.095
+Guinea Bissau,rural,0.7390000000000001,0.064
+Guyana,urban non-poor,0.113,0.051
+Guyana,urban poor,0.085,0.135
+Guyana,rural,0.802,0.087
+Haiti,urban non-poor,0.166,0.078
+Haiti,urban poor,0.179,0.14800000000000002
+Haiti,rural,0.655,0.191
+Honduras,urban non-poor,0.24,0.033
+Honduras,urban poor,0.183,0.028999999999999998
+Honduras,rural,0.5770000000000001,0.037000000000000005
+India,urban non-poor,0.146,0.059000000000000004
+India,urban poor,0.12300000000000001,0.094
+India,rural,0.731,0.059000000000000004
+Indonesia,urban non-poor,0.29600000000000004,0.07
+Indonesia,urban poor,0.193,0.115
+Indonesia,rural,0.512,0.134
+Iraq,urban non-poor,0.385,0.096
+Iraq,urban poor,0.301,0.147
+Iraq,rural,0.313,0.166
+Jamaica,urban non-poor,0.32,0.022000000000000002
+Jamaica,urban poor,0.233,0.086
+Jamaica,rural,0.447,0.048
+Jordan,urban non-poor,0.426,0.066
+Jordan,urban poor,0.456,0.08900000000000001
+Jordan,rural,0.11800000000000001,0.048
+Kazakhstan,urban non-poor,0.272,0.075
+Kazakhstan,urban poor,0.21,0.047
+Kazakhstan,rural,0.517,0.026000000000000002
+Kenya,urban non-poor,0.221,0.019
+Kenya,urban poor,0.131,0.02
+Kenya,rural,0.648,0.027000000000000003
+Kiribati,urban non-poor,0.312,0.38799999999999996
+Kiribati,urban poor,0.239,0.46799999999999997
+Kiribati,rural,0.44799999999999995,0.375
+Kosovo,urban non-poor,0.222,0.026000000000000002
+Kosovo,urban poor,0.149,0.057
+Kosovo,rural,0.629,0.04
+Kyrgyzstan,urban non-poor,0.17600000000000002,0.175
+Kyrgyzstan,urban poor,0.152,0.113
+Kyrgyzstan,rural,0.672,0.068
+Lao,urban non-poor,0.17600000000000002,0.159
+Lao,urban poor,0.121,0.312
+Lao,rural,0.703,0.292
+Lesotho,urban non-poor,0.18,0.08900000000000001
+Lesotho,urban poor,0.15,0.062
+Lesotho,rural,0.67,0.08800000000000001
+Liberia,urban non-poor,0.284,0.067
+Liberia,urban poor,0.23199999999999998,0.069
+Liberia,rural,0.483,0.10400000000000001
+Madagascar,urban non-poor,0.081,0.067
+Madagascar,urban poor,0.079,0.205
+Madagascar,rural,0.84,0.233
+Malawi,urban non-poor,0.069,0.035
+Malawi,urban poor,0.065,0.054000000000000006
+Malawi,rural,0.865,0.046
+Maldives,urban non-poor,0.207,0.135
+Maldives,urban poor,0.124,0
+Maldives,rural,0.669,0.096
+Mali,urban non-poor,0.11900000000000001,0.042
+Mali,urban poor,0.091,0.127
+Mali,rural,0.79,0.20600000000000002
+Mauritania,urban non-poor,0.256,0.09
+Mauritania,urban poor,0.18100000000000002,0.11800000000000001
+Mauritania,rural,0.563,0.13699999999999998
+Mexico,urban non-poor,0.355,0.07400000000000001
+Mexico,urban poor,0.376,0.098
+Mexico,rural,0.26899999999999996,0.055
+Mongolia,urban non-poor,0.35100000000000003,0.032
+Mongolia,urban poor,0.322,0.017
+Mongolia,rural,0.32799999999999996,0.039
+Montenegro,urban non-poor,0.359,0.039
+Montenegro,urban poor,0.235,0.071
+Montenegro,rural,0.406,0.061
+Mozambique,urban non-poor,0.135,0.027999999999999997
+Mozambique,urban poor,0.11900000000000001,0.067
+Mozambique,rural,0.746,0.11800000000000001
+Myanmar,urban non-poor,0.141,0.019
+Myanmar,urban poor,0.11800000000000001,0.17600000000000002
+Myanmar,rural,0.741,0.146
+Namibia,urban non-poor,0.23800000000000002,0.13
+Namibia,urban poor,0.259,0.09
+Namibia,rural,0.504,0.038
+Nepal,urban non-poor,0.366,0.07
+Nepal,urban poor,0.28300000000000003,0.168
+Nepal,rural,0.35100000000000003,0.092
+Niger,urban non-poor,0.08800000000000001,0.195
+Niger,urban poor,0.045,0.17
+Niger,rural,0.867,0.195
+Nigeria,urban non-poor,0.233,0.109
+Nigeria,urban poor,0.162,0.303
+Nigeria,rural,0.605,0.45
+North Macedonia,urban non-poor,0.41200000000000003,0.031
+North Macedonia,urban poor,0.177,0.134
+North Macedonia,rural,0.41100000000000003,0.012
+Pakistan,urban non-poor,0.204,0.043
+Pakistan,urban poor,0.14,0.132
+Pakistan,rural,0.657,0.166
+Panama,urban non-poor,0.263,0.069
+Panama,urban poor,0.314,0.106
+Panama,rural,0.423,0.062
+Papua New Guinea,urban non-poor,0.066,0.138
+Papua New Guinea,urban poor,0.055999999999999994,0.226
+Papua New Guinea,rural,0.878,0.387
+Paraguay,urban non-poor,0.319,0.066
+Paraguay,urban poor,0.302,0.021
+Paraguay,rural,0.379,0.065
+Peru,urban non-poor,0.408,0.07
+Peru,urban poor,0.36,0.068
+Peru,rural,0.23199999999999998,0.085
+Philippines,urban non-poor,0.23600000000000002,0.084
+Philippines,urban poor,0.222,0.14
+Philippines,rural,0.542,0.153
+Rwanda,urban non-poor,0.085,0.022000000000000002
+Rwanda,urban poor,0.08,0
+Rwanda,rural,0.835,0.002
+Samoa,urban non-poor,0.086,0.215
+Samoa,urban poor,0.07400000000000001,0.21600000000000003
+Samoa,rural,0.84,0.31
+Sao Tome and Principe,urban non-poor,0.36700000000000005,0.013000000000000001
+Sao Tome and Principe,urban poor,0.254,0.022000000000000002
+Sao Tome and Principe,rural,0.379,0.033
+Senegal,urban non-poor,0.223,0.009000000000000001
+Senegal,urban poor,0.156,0.031
+Senegal,rural,0.621,0.05
+Serbia,urban non-poor,0.43700000000000006,0.023
+Serbia,urban poor,0.145,0
+Serbia,rural,0.418,0.06
+Sierra Leone,urban non-poor,0.204,0.038
+Sierra Leone,urban poor,0.138,0.048
+Sierra Leone,rural,0.6579999999999999,0.06
+South Africa,urban non-poor,0.295,0.08199999999999999
+South Africa,urban poor,0.32,0.11
+South Africa,rural,0.386,0.076
+South Sudan,urban non-poor,0.147,0.596
+South Sudan,urban poor,0.106,0.733
+South Sudan,rural,0.747,0.752
+State of Palestine,urban non-poor,0.502,0.07
+State of Palestine,urban poor,0.341,0.003
+State of Palestine,rural,0.157,0.055999999999999994
+Sudan,urban non-poor,0.152,0.063
+Sudan,urban poor,0.12,0.139
+Sudan,rural,0.728,0.19399999999999998
+Suriname,urban non-poor,0.33799999999999997,0.19699999999999998
+Suriname,urban poor,0.33299999999999996,0.20800000000000002
+Suriname,rural,0.32899999999999996,0.18600000000000003
+Tajikistan,urban non-poor,0.106,0.105
+Tajikistan,urban poor,0.087,0.136
+Tajikistan,rural,0.807,0.066
+Tanzania,urban non-poor,0.163,0.013000000000000001
+Tanzania,urban poor,0.124,0.006
+Tanzania,rural,0.7140000000000001,0.039
+Thailand,urban non-poor,0.187,0.024
+Thailand,urban poor,0.166,0.08199999999999999
+Thailand,rural,0.6459999999999999,0.02
+Timor Leste,urban non-poor,0.147,0.09699999999999999
+Timor Leste,urban poor,0.131,0.172
+Timor Leste,rural,0.722,0.248
+Togo,urban non-poor,0.245,0.065
+Togo,urban poor,0.152,0.075
+Togo,rural,0.603,0.106
+Tonga,urban non-poor,0.121,0.057
+Tonga,urban poor,0.10300000000000001,0
+Tonga,rural,0.7759999999999999,0.038
+Tunisia,urban non-poor,0.406,0.087
+Tunisia,urban poor,0.20600000000000002,0.033
+Tunisia,rural,0.38799999999999996,0.01
+Türkiye,urban non-poor,0.39299999999999996,0.03
+Türkiye,urban poor,0.402,0.086
+Türkiye,rural,0.205,0.047
+Turkmenistan,urban non-poor,0.201,0.022000000000000002
+Turkmenistan,urban poor,0.154,0.015
+Turkmenistan,rural,0.645,0
+Tuvalu,urban non-poor,0.349,0
+Tuvalu,urban poor,0.242,0.04
+Tuvalu,rural,0.409,0.019
+Uganda,urban non-poor,0.153,0.055999999999999994
+Uganda,urban poor,0.08199999999999999,0.049
+Uganda,rural,0.7659999999999999,0.05
+Ukraine,urban non-poor,0.451,0.163
+Ukraine,urban poor,0.26899999999999996,0.134
+Ukraine,rural,0.28,0.16699999999999998
+Vietnam,urban non-poor,0.20600000000000002,0.042
+Vietnam,urban poor,0.107,0.106
+Vietnam,rural,0.687,0.042
+Yemen,urban non-poor,0.153,0.08199999999999999
+Yemen,urban poor,0.11199999999999999,0.226
+Yemen,rural,0.735,0.267
+Zambia,urban non-poor,0.196,0.013000000000000001
+Zambia,urban poor,0.156,0.018000000000000002
+Zambia,rural,0.648,0.024
+Zimbabwe,urban non-poor,0.153,0.018000000000000002
+Global,rural,0.6291725104845071,0.11968071960218803
+Global,urban non-poor,0.20622726824807283,0.06132002313564327
+Global,urban poor,0.16453104770679128,0.11428508635441612
