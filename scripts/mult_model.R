@@ -729,7 +729,94 @@ plot_list <- create_and_save_plots(
 dir.create("outputs/supplementary", showWarnings = FALSE, recursive = TRUE)
 
 # Save any additional plots that might be needed for supplementary material
-save_supplementary_plots <- function(plot, filename, width, height, dpi = 600) {
+save_supplementary_plots <- function(plot, filename, width = 16, height = 20, dpi = 600) {
   ggsave(paste0("outputs/supplementary/", filename, ".png"), plot, width = width, height = height, dpi = dpi, bg = "white")
   ggsave(paste0("outputs/supplementary/", filename, ".pdf"), plot, width = width, height = height, dpi = dpi, bg = "white")
 }
+
+# Create and save supplementary plots
+# DTP1 coverage comparison across all strata
+dtp1_coverage_plot <- ggplot(coverage_numbers_historical %>% 
+                              filter(country %in% plot_countries, vaccine == "DTP1") %>%
+                              mutate(country = factor(country, levels = plot_countries))) +
+  geom_line(aes(x = year, y = urban_poor_coverage, color = "Urban Poor"), linewidth = 1) +
+  geom_line(aes(x = year, y = urban_nonpoor_coverage, color = "Urban Non-Poor"), linewidth = 1) +
+  geom_line(aes(x = year, y = rural_coverage, color = "Rural"), linewidth = 1) +
+  facet_wrap(~country, scales = "free_y", ncol = 2) +
+  labs(
+    title = "DTP1 Coverage by Population Strata (2025-2050)",
+    x = "Year",
+    y = "Coverage (%)",
+    color = "Population Strata"
+  ) +
+  scale_color_manual(values = strata_colors) +
+  custom_theme()
+
+save_supplementary_plots(dtp1_coverage_plot, "dtp1_all_strata_coverage_comparison_plot")
+
+# DTP1 zero-dose comparison across all strata - now using stacked area plot
+dtp1_zerodose_plot <- ggplot(coverage_numbers_historical %>% 
+                              filter(country %in% plot_countries, vaccine == "DTP1") %>%
+                              mutate(
+                                country = factor(country, levels = plot_countries),
+                                urban_poor_zerodose = population * (`urban poor_adjusted`/100) * (1 - urban_poor_coverage/100),
+                                urban_nonpoor_zerodose = population * (`urban non-poor_adjusted`/100) * (1 - urban_nonpoor_coverage/100),
+                                rural_zerodose = population * (rural_proportion/100) * (1 - rural_coverage/100)
+                              )) +
+  geom_area(aes(x = year, y = (urban_poor_zerodose + urban_nonpoor_zerodose + rural_zerodose)/1000, fill = "Rural"), alpha = 0.8) +
+  geom_area(aes(x = year, y = (urban_poor_zerodose + urban_nonpoor_zerodose)/1000, fill = "Urban Non-Poor"), alpha = 0.8) +
+  geom_area(aes(x = year, y = urban_poor_zerodose/1000, fill = "Urban Poor"), alpha = 0.8) +
+  facet_wrap(~country, scales = "free_y", ncol = 2) +
+  labs(
+    title = "DTP1 Zero-Dose Children by Population Strata (2025-2050)",
+    x = "Year",
+    y = "Zero-Dose Children (thousands)",
+    fill = "Population Strata"
+  ) +
+  scale_fill_manual(values = strata_colors) +
+  custom_theme()
+
+save_supplementary_plots(dtp1_zerodose_plot, "dtp1_all_strata_zerodose_comparison_plot")
+
+# Measles coverage comparison across all strata
+measles_coverage_plot <- ggplot(coverage_numbers_historical %>% 
+                                filter(country %in% plot_countries, vaccine == "measles1") %>%
+                                mutate(country = factor(country, levels = plot_countries))) +
+  geom_line(aes(x = year, y = urban_poor_coverage, color = "Urban Poor"), linewidth = 1) +
+  geom_line(aes(x = year, y = urban_nonpoor_coverage, color = "Urban Non-Poor"), linewidth = 1) +
+  geom_line(aes(x = year, y = rural_coverage, color = "Rural"), linewidth = 1) +
+  facet_wrap(~country, scales = "free_y", ncol = 2) +
+  labs(
+    title = "Measles Coverage by Population Strata (2025-2050)",
+    x = "Year",
+    y = "Coverage (%)",
+    color = "Population Strata"
+  ) +
+  scale_color_manual(values = strata_colors) +
+  custom_theme()
+
+save_supplementary_plots(measles_coverage_plot, "measles_all_strata_coverage_comparison_plot")
+
+# Measles zero-dose comparison across all strata - now using stacked area plot
+measles_zerodose_plot <- ggplot(coverage_numbers_historical %>% 
+                                 filter(country %in% plot_countries, vaccine == "measles1") %>%
+                                 mutate(
+                                   country = factor(country, levels = plot_countries),
+                                   urban_poor_zerodose = population * (`urban poor_adjusted`/100) * (1 - urban_poor_coverage/100),
+                                   urban_nonpoor_zerodose = population * (`urban non-poor_adjusted`/100) * (1 - urban_nonpoor_coverage/100),
+                                   rural_zerodose = population * (rural_proportion/100) * (1 - rural_coverage/100)
+                                 )) +
+  geom_area(aes(x = year, y = (urban_poor_zerodose + urban_nonpoor_zerodose + rural_zerodose)/1000, fill = "Rural"), alpha = 0.8) +
+  geom_area(aes(x = year, y = (urban_poor_zerodose + urban_nonpoor_zerodose)/1000, fill = "Urban Non-Poor"), alpha = 0.8) +
+  geom_area(aes(x = year, y = urban_poor_zerodose/1000, fill = "Urban Poor"), alpha = 0.8) +
+  facet_wrap(~country, scales = "free_y", ncol = 2) +
+  labs(
+    title = "Measles Zero-Dose Children by Population Strata (2025-2050)",
+    x = "Year",
+    y = "Zero-Dose Children (thousands)",
+    fill = "Population Strata"
+  ) +
+  scale_fill_manual(values = strata_colors) +
+  custom_theme()
+
+save_supplementary_plots(measles_zerodose_plot, "measles_all_strata_zerodose_comparison_plot")
